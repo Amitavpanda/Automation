@@ -1,0 +1,17 @@
+# Content & Social Media Workflow
+# Daily/weekly: curate trends, post to LinkedIn/X
+
+name: content-social
+trigger: daily
+agents:
+  - content-curator   # X/Reddit/News — trending topics
+  - social-poster     # LinkedIn/X — publish curated posts
+
+execution:
+  mode: sequential  # curator runs first, poster consumes output
+  session_prefix: content
+  cleanup: browser-use close --all
+
+output:
+  format: json
+  path: ./output/content-social-{date}.json

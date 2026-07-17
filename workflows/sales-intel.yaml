@@ -1,0 +1,19 @@
+# Sales Intelligence Workflow
+# Runs daily: scrapes LinkedIn, Upwork, Crunchbase, Wellfound
+
+name: sales-intel
+trigger: daily
+agents:
+  - lead-agent       # LinkedIn — hiring signals
+  - gig-agent        # Upwork — open projects
+  - funding-agent    # Crunchbase — recently funded
+  - company-agent    # Wellfound — startups hiring
+
+execution:
+  mode: parallel
+  session_prefix: sales
+  cleanup: browser-use close --all
+
+output:
+  format: json
+  path: ./output/sales-intel-{date}.json
