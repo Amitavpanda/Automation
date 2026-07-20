@@ -1,0 +1,41 @@
+{
+  "ideal_client_profile": {
+    "company": {
+      "stage": ["Seed", "Series A", "Series B", "Bootstrapped_revenue"],
+      "type": ["B2B_SaaS", "Vertical_SaaS", "AI_Product", "Marketplace", "Operations_heavy_business"],
+      "geography": ["US", "Canada", "UK", "EU", "UAE", "India"],
+      "employee_range": ["anyone", 200],
+      "tech_stack_hint": [
+        "React", "Next.js", "Node.js", "Python", ".NET",
+        "React Native", "AWS", "Azure", "ABP framework",
+        "Java", "CI/CD", "AI", "RAG"
+      ]
+    },
+    "buyer_persona": {
+      "titles": [
+        "CTO", "VP Engineering", "Head of Engineering",
+        "Technical Founder", "Non-technical Founder",
+        "Founder & CEO", "CPO", "Head of Product"
+      ],
+      "pains": [
+        "Need to ship new MVP or module quickly",
+        "In-house team is bandwidth constrained",
+        "Previous agency/freelancer was slow or low quality",
+        "Need AI features (RAG, agents, automations) in existing product",
+        "Need to harden prototype into production system"
+      ],
+      "decision_drivers": [
+        "Time_to_market", "Senior_execution", "Production_reliability",
+        "Clear_scope_and_fixed_timeline", "Ability_to_own_full_stack_delivery"
+      ]
+    },
+    "project": {
+      "categories": [
+        "SaaS_MVP_build", "AI_feature_or_agent_build",
+        "Workflow_automation", "Production_hardening_or_rebuild",
+        "Full_stack_product_from_scratch",
+        "Design_for_mobile_app_and_website", "Mobile_app"
+      ]
+    }
+  }
+}

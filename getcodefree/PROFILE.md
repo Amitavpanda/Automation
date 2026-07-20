@@ -25,10 +25,6 @@
 
 ## Stack
 
-React · Next.js · React Native · Node.js · Python · LangChain · GPT-4o/Claude · Supabase · PostgreSQL · Vercel · AWS
-
-## Selected Builds
-
 | Project | Type | Status |
 |---|---|---|
 | CerenOne | Mobile (React Native) | Live on App Store |

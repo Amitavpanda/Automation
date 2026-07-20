@@ -1,0 +1,8 @@
+{
+  "job": "daily-twitter-inbound",
+  "schedule": "0 2 * * *",
+  "timezone": "UTC",
+  "description": "Daily Twitter inbound — browsing is manual, scheduling handled later",
+  "workdir": "/Users/amitavpanda/Desktop/projects/Automation",
+  "note": "Scheduling not active yet. Run steps manually at 10am for now."
+}
