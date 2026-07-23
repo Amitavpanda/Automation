@@ -69,7 +69,7 @@ Text: "[headline]"
 Size: 1200×628 landscape.
 ```
 
-### Article cover (2:1 — 1600×800)
+### Article cover (5:2 — 1600×640)
 ```
 Image prompt for Gemini:
 Style: Digital illustration, minimalist tech, dark cyberpunk-clean.
@@ -79,7 +79,21 @@ Subject: [conceptual illustration of article topic]
 Typography: Large gradient title, white subtitle line.
 Details: Full teal glow backdrop, glass card layers, tech grid.
 Text: "[article title]"
-Size: 1600×800.
+Size: 1600×640 (5:2 ratio — X Articles requirement).
+```
+
+### Article inline image placeholder (varies)
+
+Place between sections. Describe content-specific visual. Mention aspect ratio in description.
+```
+Image prompt for Gemini:
+Style: Digital illustration, minimalist tech, dark cyberpunk-clean.
+Colors: #090d11 background, #19d3c5 teal accents, #6f8cff blue highlights.
+Mood: [matches surrounding section tone — e.g. analytical for architecture, energetic for results]
+Subject: [specific visual matching [Image: description] label in article]
+Typography: Minimal or none (illustration-only).
+Details: Glass card layers, teal glow, grid lines, tool logo badges if relevant.
+Size: [choose based on placement context].
 ```
 
 ### Tool/Logo mention

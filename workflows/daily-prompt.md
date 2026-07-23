@@ -1,6 +1,6 @@
 # Daily Prompt — Copy & Paste This
 
-Run this prompt in opencode at 10:00 AM IST. All 5 skills execute sequentially. Draft only — nothing auto-posts.
+Run this prompt in opencode at 10:00 AM IST. All skills execute sequentially. Draft only — nothing auto-posts.
 
 **Chrome profile**: Amitav (Default directory, logged in as pandaamitav01@gmail.com)
 **All browser-use commands use**: `--profile Amitav` (add `--headed` for draft steps)
@@ -14,6 +14,13 @@ Run the full Twitter inbound lead system from getcodefree/agents/twitter/twitter
 IMPORTANT: Use --profile Amitav for ALL browser-use commands. Add --headed for Skills 3-5 (drafting). Logged in as pandaamitav01@gmail.com.
 Every tweet output MUST include its full URL (https://x.com/handle/status/id).
 Every draft (reply, post, article) MUST include image_prompt for Gemini (use getcodefree/brand/image-prompt-system.md).
+
+BEFORE Skill 4, ask me: which content type today?
+- Standard posts
+- Lead magnet posts (value + reply CTA for DM capture)
+- Threads (3-10 tweets)
+- AI coding content (Cursor/Claude/Perplexity/agents)
+- Mix
 
 Execute all 6 skills in sequence. Present results after each before moving to next.
 
@@ -42,12 +49,21 @@ Two types of accounts:
   - https://x.com/jackbutcher
   - https://x.com/thedankoe
 
+Also scrape AI/TECH feeds for potential Skill 7 content:
+  - https://x.com/PrajwalTomar_         # Cursor MVP content
+  - https://x.com/kaliiiiiiiiii          # AI/tooling takes
+  - https://x.com/nickfloats             # AI dev insights
+  - https://x.com/levelsio               # builds with AI, transparent revenue
+  - https://x.com/mckaywrigley           # AI apps ship fast
+  - https://x.com/dotey                  # AI agents
+  - https://x.com/yoheinakajima          # AI agent frameworks
+
 Checklist: relevant to dev agency, building products, AI/tech, freelancing, SaaS, making money. Shows authority. High engagement. Not generic.
-Return JSON with URL (required), author, text, views, likes, type ("competitor" | "lead-rich"), why_selected.
+Return JSON with URL (required), author, text, views, likes, type ("competitor" | "lead-rich" | "ai-tech"), why_selected.
 
 IMPORTANT: Replies target lead-rich accounts (founder audience = potential clients). Posts/articles draw from competitor content (authority positioning).
 
-2026 VIRAL PLAYBOOK — Use for Skills 4-6 drafting:
+2026 CONTENT PLAYBOOK — Use for Skills 4-7 drafting:
 - Hook in first 100 chars (that's what shows before "Show more")
 - Specific numbers always: "3 MVPs in 7 days" beats "some projects in a week"
 - Images boost reposts 150% — include image_prompt for every post/article
@@ -55,7 +71,8 @@ IMPORTANT: Replies target lead-rich accounts (founder audience = potential clien
 - 70/30 split: 70% useful insights, 30% product updates
 - Links go in first reply, not tweet body
 - Threads get 54% more engagement — use for framework reveals
-- Engagement velocity in first 30 min = #1 algorithmic ranking factor
+- Design for BOOKMARKS + REPLIES, not likes. Content that gets saved and discussed gets algorithm boost.
+- Lead magnet posts: value content + "Reply KEYWORD and I'll DM you [template]"
 
 SKILL 2 — Best Article:
 From competitor feeds only (not lead-rich accounts), find 1 long-form post from last 2 days with 100K+ views matching dev agency/AI/tech/freelancing domain.
@@ -78,22 +95,33 @@ CMO REPLY STRATEGY:
 Guidelines: add value, share experience, ask question, no hard sell, 1-3 sentences. Senior engineer who ships. Lead-gen mindset.
 Do NOT post.
 
-SKILL 4 — Draft Posts (MUST type in browser):
-Based on insights from today's competitor content, draft 1-3 posts using best-performing 2026 formats:
+[ASK ME: Which content type for today?]
+
+SKILL 4 — Draft Posts (MUST type in browser, content type based on day):
+Ask me: standard, lead magnet, thread, AI coding, or mix.
+
+Based on insights from today's competitor content AND selected content type, draft 1-3 posts using best-performing 2026 formats:
 - Contrarian take: "Everyone thinks X about dev agencies. They're wrong."
 - Framework reveal: "The 5-step pipeline I use to ship MVPs in 7 days:"
 - Revenue breakdown: "I made $X last month running AI pipelines. Here's how."
 - Client result: "Shipped [result] for [client type] in [timeframe]."
 - Uncomfortable truth: "Nobody talks about [unspoken reality of agency life]"
+- Lead magnet: same formats + end with "Reply KEYWORD and I'll DM you [template]"
+- Thread: hook tweet → 3-8 body tweets → summary/CTA tweet
 
 Each post MUST: hook in first 100 chars, include specific numbers, include image_prompt.
-For EACH post: open https://x.com/compose/post via browser-use --session gcf-twitter --profile Amitav --headed, clear composer, type post. Draft one at a time.
+For lead magnet posts: include reply CTA keyword.
+For threads: open composer, type Tweet 1, find "Add another tweet" button via state, click, type next tweet.
+
+For EACH post/thread: open https://x.com/compose/post via browser-use --session gcf-twitter --profile Amitav --headed, clear composer, type.
 CRITICAL: Actually type in browser. Do NOT just present text.
 Do NOT publish.
 
 SKILL 5 — LinkedIn Cross-Post (MUST type in browser):
 Take best content from today and draft LinkedIn versions.
-Adaptation: narrative paragraph format, more context, less jargon, CTA for founders/CTOs, 3-5 hashtags.
+⚠️ FULL-TIME CONSTRAINT: "I" framing, NOT "we". Senior engineer voice, NOT agency founder.
+No: "we build", "GetCodeFree", "book a call", agency language.
+Do: narrative paragraph, more context, less jargon, 1 hashtag max, end with question.
 Open https://www.linkedin.com/feed/ via browser-use --session gcf-linkedin --profile Amitav --headed, click "Start a post", click editor, type draft.
 CRITICAL: Actually type in browser. Do NOT just present text.
 Do NOT publish.
@@ -107,11 +135,18 @@ Article format rules for 2026:
 - Body: 5-7 clear sections with sub-headings
 - Include real results/data points
 - End with CTA (direct or implied)
+- Include lead magnet CTA if relevant
 - MUST include image_prompt (2:1, 1600×800)
 
 Topic: multi-agent systems shift, dev agency lessons, or building in public.
 Open https://x.com/i/articles via browser-use --session gcf-twitter --profile Amitav, find write button, type title + body.
 Leave drafted. Do NOT publish.
+
+[OPTIONAL: Run Skill 7 — AI Coding Content]
+If I say yes, run:
+SKILL 7 — AI Coding Content:
+Scrape AI/tech feeds (PrajwalTomar_, kaliiiiiiiiii, nickfloats, levelsio, mckaywrigley, dotey, yoheinakajima) for posts about Cursor, Claude, Perplexity, AI agents.
+Draft 1-3 posts with image_prompt. Type in browser. Do NOT publish.
 
 After all skills: browser-use close --all
 ```
@@ -137,6 +172,23 @@ Here is content to adapt for LinkedIn:
 [text]
 
 Draft replies, posts, and LinkedIn. Draft only. Do NOT publish.
+```
+
+---
+
+## Keyword Monitor (Standalone Run)
+
+Run separately from main routine. 1-2x/day.
+
+```
+Run getcodefree/agents/twitter/keyword-monitor-agent.md.
+
+Search X for: "looking for a developer", "need help building", "build my MVP", "need a tech partner", "looking for dev agency"
+Search LinkedIn for: "need a developer", "looking for technical cofounder", "help with my startup"
+
+Return prioritized list of posts to reply to. Include suggested reply for each.
+Rank: high priority (explicitly hiring/needing) > medium (evaluating).
+Top 5 only. Quality > quantity.
 ```
 
 ---

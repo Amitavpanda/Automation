@@ -12,15 +12,37 @@ purpose: Inbound lead system — scrape OR manual input → drafts replies & pos
 **Chrome profile**: Amitav (Default directory, logged in as pandaamitav01@gmail.com — X, LinkedIn all authenticated)
 **All browser-use commands must use**: `--profile Amitav`
 
+## 3 Content Types — You Choose Daily
+
+Before drafting, agent asks which mix:
+
+```
+Which content type(s) today?
+[1] Standard posts (authority, opinions, insights)
+[2] Lead magnet posts (value post → reply CTA → DM lead capture)
+[3] AI coding content (Cursor, Claude, Perplexity, AI agents)
+[4] Threads (3-10 tweet sequence, highest reach)
+[5] All of the above
+[6] Custom mix (tell me)
+```
+
+Agent generates posts per selected type. Each includes `image_prompt`.
+
+## Core Flow
+
 Two modes:
 - **Auto**: agent scrapes X feed + competitor feeds, finds top content
 - **Manual**: you provide tweet/article URLs directly
 
-Either way → agent drafts replies, posts, LinkedIn cross-posts, X Articles. **Every draft includes image_prompt** for Gemini image generation. Draft only — you review before posting.
+Either way → agent drafts content per your chosen types. Draft only — you review before posting.
+
+---
 
 ## Goal
 
 Grow @AmitavPanda from 284 → 50k followers in 3 months. Generate inbound client leads for GetCodeFree.
+
+---
 
 ## CMO Strategy — Reply vs Post Targeting
 
@@ -35,64 +57,31 @@ Grow @AmitavPanda from 284 → 50k followers in 3 months. Generate inbound clien
 
 ---
 
-## 2026 Viral Content Playbook — What Agent Looks For
+## 2026 Algorithm Priority Signals
 
-### What Makes a Tweet Go Viral in 2026
-
-Research-backed patterns (from 847+ tweet analysis, Buffer 45M+ post study, forkoff 140-campaign data):
-
-| Structure | Hook Pattern | Why It Works |
-|---|---|---|
-| Contrarian take | "Everyone thinks X. They're wrong." | Debate drives reply depth (strongest algosignal) |
-| Uncomfortable truth | "Nobody talks about [unspoken reality]" | Recognition drives shares + saves |
-| Framework reveal | "The system that [result] in [timeframe]:" | Utility drives bookmarks (top quality signal) |
-| Bold prediction | "[Prediction] will happen by [date]." | Controversy drives reply speed (velocity = reach) |
-| How I thread | "How I [result] in [timeframe]:" | Narrative keeps dwell time high |
-| Revenue breakdown | "I made $X last month. Here's how:" | Numbers + transparency = compound engagement |
-| Client result | "Shipped [result] for [client type] in [time]." | Social proof + specificity = lead generation |
-
-### Algorithm Priority Signals (X in 2026):
-1. **Engagement velocity** — replies/reposts in first 30 minutes is #1 ranking factor
-2. **Reply depth** — multi-level conversation threads beat single reactions
-3. **Bookmark rate** — highest quality signal (user wants to return)
+1. **Engagement velocity** — replies/reposts in first 30 minutes
+2. **Bookmark rate** — highest quality signal (user wants to return)
+3. **Reply depth** — multi-level conversation threads
 4. **Dwell time** — how long people pause before scrolling
-5. **Creator authority** — account-level credibility score
 
-### Content Type — What Agent Targets
+**Design for bookmarks + replies, not likes.** Content that gets saved and discussed gets algorithm boost.
 
-| Content | Source Accounts | What to Extract | Hook Style to Draft | Goal |
-|---|---|---|---|---|
-| **Replies** (Skill 3) | Lead-rich only (levelsio, gregisenberg, SahilBloom, marclou, etc.) | Tweets with 50K+ views where your expertise adds value. Look for: founder questions, tech debates, revenue discussions, hiring complaints | Add specific number/result. "I do X and Y happened." 1-3 sentences. No soft praise. | Visibility in front of potential clients. Reply = lead signal. |
-| **Posts** (Skill 4) | Competitors + your own insights | Topics trending in dev/AI/agency space. High-engagement posts about: building with AI, agency models, shipping fast, revenue transparency | Contrarian take, framework reveal, or revenue breakdown. Must include specific numbers. | Follower growth. Authority positioning. |
-| **LinkedIn** (Skill 5) | Repurpose best post from Skill 4 | Same topic as best-performing post idea | Narrative paragraph format. More context. CTA for founders/CTOs. | Reach professional audience. Lead gen. |
-| **Articles** (Skill 6) | Competitors only (kaif9998, DeRonin_, askwhykartik, etc.) | Long-form posts with 100K+ views matching GetCodeFree domain. Look for: AI pipeline insights, agency lessons, technical deep-dives | How I / Framework reveal. 800-1200 words with: hook → insight/body → CTA | Deep authority. Appear in follower feeds. SEO reach. |
-
-### Build-in-Public Rule: 70/30 Split
-- **70%** of posts = insights and observations useful to anyone (even non-clients)
-- **30%** = direct updates about your product/agency progress
-- Flip this ratio and you're a newsletter, not a personal brand.
-
-### Format Rules for Maximum Reach:
-- **Hook in first 100 chars** — that's what shows before "Show more"
-- **Specific numbers always** — "3 MVPs in 7 days" beats "some projects in a week"
-- **Images boost reposts 150%** — include tweet image for every post
-- **Threads get 54% more engagement** — use for frameworks/reveals
-- **Links go in first reply, not tweet body** — algorithm penalizes link-in-tweet
+---
 
 ## Skill 1: Top 10 Tweets (Last 2 Days)
 
 Scrape own feed + competitor feeds + lead-rich accounts for last 2 days. Return 10 tweets with highest views that pass checklist.
 
 **Goal:** 2 types of tweets needed:
-- **Competitors/peers** (from competitor feeds) — for content inspiration, articles, posts
-- **Lead-rich accounts** (founders, startup builders, people who hire dev agencies) — for reply targets. Replies on these tweets get visibility in front of potential clients.
+- **Competitors/peers** — for content inspiration, articles, posts
+- **Lead-rich accounts** — for reply targets. Replies on these get visibility in front of potential clients.
 
 **Checklist:**
 - Relevant to: dev agency, building products, AI/tech, freelancing, SaaS, making money
 - Shows authority (senior dev insight, real experience, contrarian take)
 - High engagement (views, likes, replies, bookmarks)
 - Not generic/guru content — specific, actionable, opinionated
-- For LEAD-RICH account tweets: prioritise those where a reply from @AmitavPanda adds value AND gets visibility in front of the account's founder/startup audience
+- For LEAD-RICH account tweets: prioritise those where a reply from @AmitavPanda99 adds value AND gets visibility in front of the account's founder/startup audience
 - For COMPETITOR tweets: prioritise content usable as post/article inspiration — frameworks, revenue numbers, contrarian takes, client results
 
 **Competitor feeds (for content + article inspiration):**
@@ -107,7 +96,7 @@ Scrape own feed + competitor feeds + lead-rich accounts for last 2 days. Return 
 ```
 
 **Lead-rich accounts (for reply targets — founders, investors, startup audience):**
-Default context: dev agency, building in public, AI/tech. Swap targets for other contexts (company page, different niche, B2B SaaS).
+Default context: dev agency, building in public, AI/tech. Swap targets for other contexts.
 ```yaml
 - https://x.com/levelsio
 - https://x.com/gregisenberg
@@ -117,6 +106,17 @@ Default context: dev agency, building in public, AI/tech. Swap targets for other
 - https://x.com/dvassallo
 - https://x.com/jackbutcher
 - https://x.com/thedankoe
+```
+
+**AI/Tech feeds (for Skill 7 — AI coding content):**
+```yaml
+- https://x.com/PrajwalTomar_         # Cursor MVP content
+- https://x.com/kaliiiiiiiiii          # AI/tooling takes
+- https://x.com/nickfloats             # AI dev insights
+- https://x.com/levelsio               # builds with AI, transparent revenue
+- https://x.com/mckaywrigley           # AI apps ship fast
+- https://x.com/dotey                  # AI agents
+- https://x.com/yoheinakajima          # AI agent frameworks
 ```
 
 **Workflow:**
@@ -177,10 +177,9 @@ From same feeds, find 1 article/post with high views matching GetCodeFree domain
 Takes tweets (from Skill 1 scrape OR URLs you provide) and drafts replies. **MUST type each reply in browser composer.**
 
 **CRITICAL — Reply Targeting Strategy:**
-- **PRIORITY: Lead-rich accounts** (founders, startup builders, investors) — replies on these tweets get visibility in front of potential clients who need dev agency services. Think: @levelsio, @gregisenberg, @SahilBloom, @marclou, @ShreyasDoshi
-- **SECONDARY: Competitors** — only reply if you can add unique value that positions you as an authority. Avoid fanboy replies. Add insight.
-- **NEVER reply to competitors just to be seen.** Every reply must generate a lead signal (visibility in front of the right audience) or position you as an authority.
-- CMO mindset: "Will this reply make someone think 'I need this person to build my app'?"
+- **PRIORITY: Lead-rich accounts** (founders, startup builders, investors) — replies on these tweets get visibility in front of potential clients who need dev agency services.
+- **SECONDARY: Competitors** — only reply if you can add unique value that positions you as an authority.
+- Every reply must generate a lead signal (visibility in front of the right audience) or position you as an authority.
 
 **Usage:**
 ```
@@ -203,7 +202,7 @@ For each tweet:
 4. `browser-use type "<reply>"` to type reply in composer
 5. Leave drafted. Do NOT post.
 
-**Also generate** `image_prompt` for each reply (Gemini prompt for the tweet's visual). Use brand system from `getcodefree/brand/image-prompt-system.md`.
+**Also generate** `image_prompt` for each reply (Gemini prompt for the tweet's visual). Use brand system.
 
 **Output:**
 ```json
@@ -222,34 +221,93 @@ For each tweet:
 
 ---
 
-## Skill 4: Draft Posts
+## Skill 4: Draft Posts (Standard + Lead Magnet + Threads)
 
 Open X composer, draft 1-3 posts based on **competitor content insights** OR your topics. **MUST type each post in browser composer.**
 
-**Source:** Pull insights from competitor tweets/articles. Do NOT draw from lead-rich accounts for post content — those are for reply targets only.
+### Format Options (Agent asks which):
 
-**Categories:** building in public, senior takes, client results, lessons learned.
+```
+Post format?
+[1] Single post (standard)
+[2] Lead magnet post (value + reply CTA for DM capture)
+[3] Thread (3-10 tweets, highest reach)
+[4] Mix
+```
 
-**Usage (auto):** "Draft posts based on insights from today's top tweets."
-**Usage (manual):** "Draft posts about these topics: [list]"
+### Lead Magnet Posts
 
-**Workflow:**
+Structure:
+```
+Tweet 1-3: Value content (insight, framework, client result, take)
+Last tweet: CTA → "Reply KEYWORD and I'll DM you [free template/resource]"
+```
+
+Lead magnet CTAs work for:
+- "Reply BLUEPRINT and I'll DM you our 7-Day MVP Blueprint template"
+- "Reply AUDIT and I'll DM you our Startup Tech Stack Audit"
+- "Reply CHECKLIST and I'll DM you our production deployment checklist"
+- "Reply SCOPING and I'll DM you our MVP scoping template"
+
+**Why this works:** X algorithm boosts replies. You capture warm leads in DMs. Low friction.
+
+### Threads
+
+Thread = 3-10 connected tweets. 54% more engagement than single posts.
+
+Structure:
+```
+Tweet 1: Hook (contrarian take, specific claim, or question)
+Tweet 2-8: Body (one idea per tweet, build the case)
+Tweet 9 (optional): Summary / key takeaway
+Tweet 10 (optional): Lead magnet CTA (if lead magnet mode)
+```
+
+**Algorithm benefit:** Threads get high bookmark rate + reply depth — two top ranking signals.
+
+**Workflow for thread:**
+1. `browser-use --session gcf-twitter --profile Amitav --headed open https://x.com/compose/post`
+2. Type Tweet 1
+3. Click "Add another tweet" button (find via `browser-use state`)
+4. Type Tweet 2
+5. Repeat for remaining tweets
+6. Leave drafted. Do NOT publish.
+
+**Categories:** building in public, senior takes, client results, lessons learned, AI coding.
+
+### Source:** Pull insights from competitor tweets/articles and AI/tech feeds. Do NOT draw from lead-rich accounts for post content — those are for reply targets only.
+
+**Usage:**
+```
+Skill 4 — Draft Posts.
+
+Sources: competitor insights + AI coding feeds.
+Format: [single | lead magnet | thread | mix]
+Topics from today's top 10 tweets.
+
+Draft in browser. Do NOT publish.
+```
+
+**Workflow for single/lead magnet post:**
 For each post:
 1. `browser-use --session gcf-twitter --profile Amitav --headed open https://x.com/compose/post`
 2. `browser-use eval` to clear composer: `document.querySelector('div[aria-label="Post text"]').innerHTML = ''`
 3. `browser-use type "<post-text>"` (use single quotes in shell for $ signs)
 4. Leave drafted. You click "Post" manually. One post at a time.
 
-**Also generate** `image_prompt` per post (1:1 square 1080×1080). Use brand system.
+**Also generate** `image_prompt` per post (1:1 square 1080×1080). For threads, generate 1 image prompt for the thread cover.
 
 **Output:**
 ```json
 {
   "skill": "draft-posts",
+  "format": "single | lead-magnet | thread",
   "posts": [
     {
-      "text": "post content",
+      "text": "post content (first tweet if thread)",
+      "thread_tweets": ["tweet 1", "tweet 2", "..."],
       "category": "senior takes",
+      "lead_magnet_keyword": "BLUEPRINT",
       "image_prompt": "Image prompt for Gemini: Style: ..."
     }
   ]
@@ -262,10 +320,32 @@ For each post:
 
 Take best content from Skills 1-4 and draft equivalent LinkedIn posts. **MUST type in browser composer.**
 
-**Adaptation rules:**
-- LinkedIn: narrative, paragraph-style, more context, less jargon
-- CTA for founders/CTOs
-- 3-5 relevant hashtags
+**⚠️ CRITICAL — Full-Time Constraint Strategy**
+
+Amitav is full-time employed. LinkedIn content must position him as a senior engineer sharing knowledge, NOT as a dev agency founder selling services.
+
+| ✅ Post This (Safe) | ❌ Avoid This (Risky) |
+|---|---|
+| Architecture deep-dives: "How I approach X" | "We build apps for startups" |
+| AI coding workflows: "My Cursor/Claude setup" | "GetCodeFree can help you build" |
+| Client result: "Helped a startup friend build X" | Pricing, packages, "book a call" |
+| Engineering opinions: "What production-grade means" | "We're a dev agency" language |
+| "I" framing (individual practitioner) | "We" framing (agency/organization) |
+
+**Pipeline:**
+```
+LinkedIn post (personal, senior engineer voice)
+  → DMs asking "how can I build this?"
+  → "I help startups with this on the side. Happy to chat."
+  → Qualified? → Share GetCodeFree company page
+```
+
+**Adaptation rules (X → LinkedIn):**
+- X: punchy, casual, "we/our" (agency voice is fine on X)
+- LinkedIn: narrative, paragraph-style, **"I" not "we"**, more context
+- End with question or discussion prompt (not hard CTA)
+- 1 hashtag max (3+ triggers spam filters in 2026)
+- Same content as X, different framing
 
 **Workflow:**
 1. `browser-use --session gcf-linkedin --profile Amitav --headed open https://www.linkedin.com/feed/`
@@ -276,6 +356,19 @@ Take best content from Skills 1-4 and draft equivalent LinkedIn posts. **MUST ty
 6. `browser-use type "<content>"` (use single quotes for $ signs)
 7. Leave drafted. You click "Post" manually.
 
+**Output:**
+```json
+{
+  "skill": "linkedin-crosspost",
+  "framing": "senior-engineer",
+  "post": {
+    "text": "LinkedIn post content (I framing, narrative, 1 hashtag max)",
+    "x_source": "link to original X post",
+    "adaptation_notes": "changed we→I, removed agency language, added question at end"
+  }
+}
+```
+
 ---
 
 ## Skill 6: Write X Article (Long-Form)
@@ -284,17 +377,59 @@ Write 1 original X Article per run based on **competitor content insights**. X A
 
 **Source:** Pull topic and framing from competitor tweets/articles. Do NOT use lead-rich accounts for article inspiration — those are for reply targets only.
 
-**Categories:** AI/tech deep-dive, dev agency lessons, building in public, senior engineer perspective.
+**Categories:** AI/tech deep-dive, dev agency lessons, building in public, senior engineer perspective, AI coding deep-dive (Cursor, agents, tooling).
 
-**Workflow:**
-1. Pick 1 topic from today's competitor tweets + articles
-2. Write 800-1200 word article with: hook, insight/body, CTA
-3. `browser-use --session gcf-twitter --profile Amitav open https://x.com/i/articles`
-4. Find "Write" or compose button, click
-5. Type title + body
-6. Leave drafted. Do NOT publish.
+### ⚠️ Draft.js Formatting Limitation
 
-**Also generate** `image_prompt` for the article cover (2:1 format, 1600×800). Use brand system.
+X Articles uses Draft.js rich text editor. Only `type` input persists. No eval/execCommand/innerHTML/toolbar-click formatting works — Draft.js reverts all DOM changes.
+
+**Bold headings** — use unicode Mathematical Bold characters when typing via `type`:
+- `𝐀𝐁𝐂𝐃𝐄𝐅𝐆𝐇𝐈𝐉𝐊𝐋𝐌𝐍𝐎𝐏𝐐𝐑𝐒𝐓𝐔𝐕𝐖𝐗𝐘𝐙`
+- `𝐚𝐛𝐜𝐝𝐞𝐟𝐠𝐡𝐢𝐣𝐤𝐥𝐦𝐧𝐨𝐩𝐪𝐫𝐬𝐭𝐮𝐯𝐰𝐱𝐲𝐳`
+- `𝟎𝟏𝟐𝟑𝟒𝟓𝟔𝟕𝟖𝟗`
+Example heading: `𝐓𝐡𝐞 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤`, `𝐏𝐡𝐚𝐬𝐞 𝟏: 𝐀𝐫𝐜𝐡𝐢𝐭𝐞𝐜𝐭𝐮𝐫𝐞`
+
+**After typing**, user must manually apply bold/italic via browser toolbar.
+
+### Image Placeholders
+
+Include `[Image: description]` text typed inline between sections. Use `keys "Enter"` + `type` to add new paragraphs. Placeholders positioned at article end can be cut/pasted by user.
+
+### Writing Workflow
+
+1. `browser-use --session gcf-article --profile Amitav open https://x.com/compose/articles`
+2. Click draft or create new, click body editor
+3. `browser-use type "<text>"` for body paragraphs
+4. `browser-use keys "Enter"` between paragraphs
+5. For headings, use Mathematical Bold unicode in the type string
+6. For image placeholders, type `[Image: description]` at target positions
+7. Leave drafted. User manually bolds/italics and adds images in browser.
+
+### Article Promotion Post
+
+When article is published, draft a tweet to share it. Options by goal:
+
+| Goal | Hook |
+|---|---|
+| Reach | Result/stat opener. "Shipped X in Y weeks. Here's how." |
+| Engagement | Question. "What's your non-negotiable step when building with AI?" |
+| Bookmark | List-style. "The 5-phase framework for..." |
+| Clicks | Money/ROI framing. "Cost client what 2 weeks of discovery alone would." |
+
+Money framing template:
+```
+Shipped [result] in [timeframe]. Cost [money reference].
+
+The math: shorter build = lower burn = faster revenue.
+
+Full breakdown → [article link]
+```
+
+### Image Prompts
+
+Generate 5 image prompts per article using `getcodefree/brand/image-prompt-system.md`:
+- Cover (5:2, 1600×640)
+- 4 inline: one per relevant section, matching the surrounding content's visual subject
 
 **Output:**
 ```json
@@ -304,7 +439,65 @@ Write 1 original X Article per run based on **competitor content insights**. X A
   "title": "article title",
   "word_count": 850,
   "why_topic": "inspired by today's top content",
-  "image_prompt": "Image prompt for Gemini: Style: ..."
+  "promotion_post": "draft tweet to share article",
+  "image_prompts": [
+    {"position": "cover", "prompt": "Gemini prompt..."},
+    {"position": "section-1", "prompt": "Gemini prompt..."}
+  ]
+}
+```
+
+---
+
+## Skill 7: AI Coding Content (Cursor / Claude / Perplexity / AI Agents)
+
+Dedicated skill for fetching + drafting content about AI coding tools. Runs alongside Skills 1-6 or standalone.
+
+**Sources:** Scrape AI/tech feeds (defined in Skill 1) for posts about:
+- Cursor (composer, agent, rules, workflows)
+- Claude Code
+- Perplexity (as dev tool)
+- AI agents (autonomous coding, agent pipelines)
+- Kimi K3, Copilot, Cline, Bolt, Lovable
+- AI vs traditional dev debates
+- Vibe coding techniques
+- MCP (Model Context Protocol) servers
+
+**Workflow:**
+1. `browser-use --session gcf-twitter --profile Amitav open <feed-url>`
+2. Scrape AI/tech feeds (PrajwalTomar_, kaliiiiiiiiii, nickfloats, levelsio, mckaywrigley, dotey, yoheinakajima)
+3. Extract posts mentioning: Cursor, Claude, Perplexity, AI agents, AI coding, vibe coding
+4. Draft 1-3 posts using these formats:
+   - "My [tool] workflow for [task]"
+   - "Where [tool] fails for production (and what I use instead)"
+   - "Comparison: [tool A] vs [tool B] for [use case]"
+   - "Tip: [specific technique] in [tool] that most people don't know"
+5. Include `image_prompt` per post
+
+**Usage:**
+```
+Skill 7 — AI Coding Content.
+
+Scrape AI/tech feeds for Cursor/Claude/Perplexity/AI agent posts.
+Draft 1-3 posts from insights.
+
+Type in browser. Do NOT publish.
+```
+
+**Output:**
+```json
+{
+  "skill": "ai-coding-content",
+  "source": "scrape | manual",
+  "feeds_scraped": ["PrajwalTomar_", "levelsio", "mckaywrigley"],
+  "posts": [
+    {
+      "text": "post text",
+      "category": "cursor-workflow | ai-coding-tip | comparison",
+      "tool_mentioned": "Cursor",
+      "image_prompt": "Image prompt for Gemini: Style: ..."
+    }
+  ]
 }
 ```
 
@@ -353,5 +546,15 @@ You give one version → I adapt for LinkedIn (narrative, hashtags) + Twitter (s
 - Every command: `browser-use --session <name> --profile Amitav`
 - Always include full tweet URLs in all outputs
 - Every draft includes `image_prompt` field (uses getcodefree/brand/image-prompt-system.md)
+- Before Skill 4, ask user: standard post, lead magnet post, or thread? Default = all 3
+- Threads = 54% more engagement. Lead magnet = capture warm leads in DMs.
 - Always `browser-use close --all` after
 - Never auto-publish. Draft + present for review.
+
+### Technical Findings
+
+- **X Articles (Draft.js)**: Only `type` input persists. eval/execCommand/innerHTML/DOM-insert all reverted by Draft.js internal state. `keys "Meta+B"` and toolbar clicks via eval also blocked.
+- **Contenteditable structure**: `contenteditable > div > div[blocks] > .longform-unstyled > .public-DraftStyleDefault-block > span[data-offset-key] > span[data-text="true"]`
+- **eval returning `None`**: When eval sets `innerHTML` or performs DOM mutations, the return value is swallowed. Check for `<strong>` via `indexOf('strong')>=0` on innerHTML to verify.
+- **Article URL format**: `https://x.com/compose/articles/edit/<id>` not `https://x.com/i/articles`
+- **All content types daily**: User wants standard + lead magnet + thread + AI coding content each run.
