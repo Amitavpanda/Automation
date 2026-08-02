@@ -1,0 +1,22 @@
+{
+  "leads": [
+    {
+      "id": "lead-001",
+      "name": "Sarah Chen",
+      "company": "Flowmatic AI",
+      "score": 9,
+      "status": "draft",
+      "touches": [],
+      "next_touch": "2026-07-30T09:00:00Z"
+    },
+    {
+      "id": "lead-002",
+      "name": "Alex Kim",
+      "company": "NexGen AI",
+      "score": 9,
+      "status": "draft",
+      "touches": [],
+      "next_touch": "2026-07-30T09:00:00Z"
+    }
+  ]
+}

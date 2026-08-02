@@ -1,0 +1,1 @@
+import json\n\nfilepath="/Users/amitavpanda/Desktop/projects/Automation/getcodefree/leads/inbox/sample_leads.json"\n\nwith open(filepath) as f:\n    leads=json.load(f)\n    print("Valid JSON:", isinstance(leads, list) and len(leads) == 3)

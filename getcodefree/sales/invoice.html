@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"><title>Invoice - GetCodeFree</title>
+<style>
+  body { font-family: 'Inter', 'Helvetica Neue', sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #111; }
+  .header { display: flex; justify-content: space-between; align-items: start; margin-bottom: 40px; }
+  .company h1 { font-size: 28px; margin: 0; color: #2563eb; }
+  .company p { margin: 2px 0; font-size: 14px; color: #555; }
+  .invoice-title { text-align: right; }
+  .invoice-title h2 { margin: 0; font-size: 32px; color: #111; }
+  .invoice-title p { margin: 2px 0; font-size: 14px; color: #777; }
+  .billing { display: flex; justify-content: space-between; margin-bottom: 40px; }
+  .billing div { width: 45%; }
+  .billing h3 { font-size: 12px; text-transform: uppercase; color: #999; margin-bottom: 8px; }
+  .billing p { margin: 2px 0; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 30px; }
+  th { text-align: left; padding: 12px 8px; border-bottom: 2px solid #2563eb; font-size: 12px; text-transform: uppercase; color: #555; }
+  td { padding: 12px 8px; border-bottom: 1px solid #eee; font-size: 14px; }
+  .total td { font-weight: bold; border-top: 2px solid #111; border-bottom: none; }
+  .total td:last-child { font-size: 20px; color: #2563eb; }
+  .footer { margin-top: 60px; font-size: 12px; color: #999; border-top: 1px solid #ddd; padding-top: 20px; }
+  .footer p { margin: 2px 0; }
+  .bank { margin-top: 20px; padding: 16px; background: #f8fafc; border-radius: 8px; font-size: 13px; }
+  .bank h4 { margin: 0 0 8px 0; font-size: 12px; text-transform: uppercase; color: #555; }
+  .bank p { margin: 2px 0; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="company">
+    <h1>GetCodeFree</h1>
+    <p>AI-Native Product Engineering</p>
+    <p>Amitav Panda (Proprietor)</p>
+    <p>Bengaluru, India</p>
+    <p>Udyam Reg: UDYAM-OD-11-0123349</p>
+  </div>
+  <div class="invoice-title">
+    <h2>INVOICE</h2>
+    <p># GCF-2026-001</p>
+    <p>Date: [INVOICE DATE]</p>
+    <p>Due: [DUE DATE]</p>
+  </div>
+</div>
+
+<div class="billing">
+  <div>
+    <h3>Bill To</h3>
+    <p>[Client Company Name]</p>
+    <p>[Contact Person]</p>
+    <p>[Email]</p>
+    <p>[Address]</p>
+  </div>
+  <div>
+    <h3>Payment Terms</h3>
+    <p>Net 15</p>
+    <p>Payment: Wire / Wise / PayPal</p>
+    <p>Currency: USD</p>
+  </div>
+</div>
+
+<table>
+  <tr>
+    <th style="width:50%">Description</th>
+    <th>Qty</th>
+    <th>Rate</th>
+    <th style="text-align:right">Amount</th>
+  </tr>
+  <tr>
+    <td>[Service description]</td>
+    <td>1</td>
+    <td>$[AMOUNT]</td>
+    <td style="text-align:right">$[AMOUNT]</td>
+  </tr>
+  <tr class="total">
+    <td colspan="3">Total (USD)</td>
+    <td style="text-align:right">$[TOTAL]</td>
+  </tr>
+</table>
+
+<div class="bank">
+  <h4>Bank Details (USD Receipt)</h4>
+  <p>Bank: [YOUR BANK NAME]</p>
+  <p>Account Name: Amitav Panda</p>
+  <p>Account Number: [YOUR ACCOUNT NUMBER]</p>
+  <p>IFSC: [YOUR IFSC]</p>
+  <p>SWIFT/BIC: [YOUR SWIFT CODE]</p>
+  <p>Wise / PayPal: [YOUR EMAIL]</p>
+</div>
+
+<div class="footer">
+  <p>GetCodeFree — getcodefreetech.com</p>
+  <p>Udyam: UDYAM-OD-11-0123349 | PAN: ESMPP0994N</p>
+  <p>This invoice is valid for 15 days from date of issue.</p>
+</div>
+
+</body>
+</html>

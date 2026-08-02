@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Sarah Chen",
+    "company": "TechNova Solutions",
+    "role": "CTO",
+    "signal_text": "Looking for a cost-effective way to automate our customer onboarding process with AI assistance. Interested in no-code/low-code solutions.",
+    "score": 8
+  },
+  {
+    "name": "James Rodriguez",
+    "company": "GrowthHack Media",
+    "role": "Head of Product",
+    "signal_text": "Need to build a prototype for a new SaaS product within 2 weeks. Budget limited but open to creative technical solutions.",
+    "score": 9
+  },
+  {
+    "name": "Priya Kapoor",
+    "company": "OpenSeed Ventures",
+    "role": "Founder",
+    "signal_text": "Seeking technical co-founder alternative - need MVP built quickly for investor demo. Mentioned GetCodeFree in Twitter thread about lean startups.",
+    "score": 7
+  }
+]
