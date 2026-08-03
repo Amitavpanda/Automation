@@ -36,6 +36,21 @@ YOU (orchestrator)
 └── gcf-analytics     → track performance, feed learnings back to strategist
 ```
 
+## Sibling Agents (same level, separate concerns)
+
+The brand system is three orchestrators, each with a different cadence and purpose:
+
+| Agent | Purpose | Cadence |
+|---|---|---|
+| `gcf-brand-orchestrator` (you) | Publish — content pipeline | Daily morning |
+| `gcf-engagement-orchestrator` | Reach — replies + comments on targets | Daily 2x (am + pm) |
+| `gcf-lead-handler` | Revenue — convert inbound DMs + lead magnet replies | Daily evening |
+
+Handoffs (within a combined run or as reference):
+- Pass strategist's `top_10` lead-rich accounts + draft briefs to engagement for reply targets.
+- Lead magnet CTAs (BLUEPRINT/AUDIT/CHECKLIST/SCOPING) → lead-handler owns the DM follow-through.
+- Analytics learnings → both strategist (what to post) and engagement (which accounts got replies).
+
 ## Minimum Output Per Day (MANDATORY)
 
 Every run must produce at least:

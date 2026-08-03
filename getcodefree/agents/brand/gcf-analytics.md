@@ -48,6 +48,12 @@ Orchestrator schedules you via opencode scheduler. Default: weekly full report +
 - Inbound DMs / qualified leads from content
 - Lead magnet replies (BLUEPRINT/AUDIT/CHECKLIST/SCOPING keywords)
 
+### Engagement (reply depth — 2026 reach lever)
+- Unanswered comments on own posts (should be near zero — reply within 2h)
+- Comment-reply depth on own posts (threaded conversations = algorithm boost)
+- Replies authored on lead-rich accounts (visibility events)
+- DM conversion rate: reply → DM → qualified lead → call booked
+
 ## How to Check (browser-use)
 
 1. X: `browser-use --session gcf-x --profile Amitav open https://x.com/AmitavPanda99`
@@ -56,6 +62,13 @@ Orchestrator schedules you via opencode scheduler. Default: weekly full report +
 3. Instagram: `browser-use --session gcf-ig --profile Amitav open https://www.instagram.com/<username>/`
 4. Read `getcodefree/brand/drafts/` and `getcodefree/leads/` for lead signal context.
 5. `browser-use close --all` after.
+
+## Engagement Analytics
+
+Cross-reference engagement + lead logs when available:
+- Read `getcodefree/brand/engagement/<date>.md` — which replies were approved, which targets got replies.
+- Read `getcodefree/leads/<date>.md` — DM leads captured, classified hot/warm/cold, conversion to meeting.
+- Report correlation: which content/lead magnet produced DMs → qualified conversations.
 
 ## Analysis Rules
 

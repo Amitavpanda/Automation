@@ -14,6 +14,7 @@
 | Production Upgrade & Support | Ongoing | Harden MVP to production-grade |
 | AI Workflow Automation | Within 5 days | Lead gen, content, CRM, internal copilots |
 | AI Setups & Integrations | 1-2 weeks | LLM, RAG, chatbots, agents |
+| Enterprise .NET / ABP | Custom | ABP Framework builds, DDD architecture, multi-tenant SaaS, legacy migration, Semantic Kernel/RAG |
 | Landing Pages & Small Projects | 1-2 weeks | High-impact pages with admin panels |
 
 ## Differentiators
@@ -22,6 +23,7 @@
 - **Founder-led**: You speak to the person building. No PM layers.
 - **Senior-only**: No juniors. Every engineer ships production apps.
 - **Speed system**: 3-week MVP is a tested model, not a promise.
+- **ABP/DDD mastery**: Production ABP Framework + DDD expert (rare — ~3-4 specialists worldwide). Multi-tenant SaaS and enterprise .NET done right, with AI features built in.
 
 ## Stack
 

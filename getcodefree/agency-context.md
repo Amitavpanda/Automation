@@ -21,6 +21,7 @@ The agency ships production-grade digital products at 3x the speed of traditiona
 - Founder is a practicing engineer — not a sales-only CEO
 - Real shipped products as proof (NativeNest, AccounSaathi, EcomAI)
 - Multi-agent dev workflows already in production internally
+- **ABP Framework / DDD mastery** — rare niche (~3-4 ABP specialists worldwide on freelance markets); production ABP platforms shipped + ABP engineering interviews conducted. Wedge into enterprise .NET work and multi-tenant SaaS.
 
 ## Proof Assets Available
 
@@ -59,6 +60,13 @@ The agency ships production-grade digital products at 3x the speed of traditiona
 - Price: ₹75k–₹2.5L MRR
 - Buyer: Startups that need a senior engineering team without hiring
 - Entry: Always offered as follow-on to Offers 1–3
+
+### Offer 5: Enterprise .NET / ABP Build & Modernization
+- Deliverable: Multi-tenant SaaS, ABP Framework builds, DDD architecture, migration off legacy ASP.NET, AI features (Semantic Kernel/RAG)
+- Price: ₹6L–₹20L setup
+- Buyer: Companies on ABP/ASP.NET Zero needing features/fixes/upgrades, DDD adopters, fintech/SaaS (India + US)
+- Entry: Direct outreach to agency overflow (Inwizards, nopStation, Nile Bits), ABP.IO authority, DDD job boards
+- Upsell: Managed retainer (Offer 4)
 
 ## Target Geographies
 

@@ -72,6 +72,50 @@ The math: shorter build = lower burn = faster revenue.
 Full breakdown → [article link]
 ```
 
+## Comment Drafting (LinkedIn "zero time" strategy)
+
+Separate lightweight output for the engagement pipeline. If the orchestrator requests comments (or you're in a combined run), draft 3-5 value-add comments on target accounts — the fastest profile-visit engine when there's no time for a full post.
+
+Comment rules:
+- Target: lead-rich + competitor + AI/tech accounts (same feed lists as researcher).
+- Each comment adds a micro-insight, framework, or question — never "great post".
+- LinkedIn: "I" voice, 2-3 lines, end with question or sharp observation. No agency pitch.
+- X: punchy one-liner or short take. No self-promo.
+- Never pitch GetCodeFree in a comment unless the conversation explicitly invites it.
+
+Output as a `comments` array (same top-level JSON):
+```json
+"comments": [
+  {
+    "target_url": "post URL",
+    "author": "@handle",
+    "platform": "x | linkedin",
+    "text": "comment draft",
+    "why": "visibility + value rationale"
+  }
+]
+```
+
+## Revised Post — DeepSeek daily stack (replace original piece)
+
+FACT RULE: the "$0.13 / 29.5M requests" line was kaif9998's claim, not Amitav's. Removed. Keep ONLY personal facts: daily marketing agents + coding on OpenCode Go + DeepSeek V4 Flash, "damn good". Cost framing stays generic ("cheap enough", "a fraction of the cost") — never quote someone else's metric as your own.
+
+```json
+{
+  "item_url": "seed: Amitav personal usage fact (OpenCode Go + DeepSeek daily)",
+  "platform": "x",
+  "format": "standard",
+  "category": "ai-coding",
+  "text": "People argue about the best AI model. I just ship.\n\nOpenCode Go + DeepSeek V4 Flash runs my marketing agents every day. Same stack for my coding. Damn good.\n\nAt this price, running agents 24/7 stopped being a cost question. The only question left is what to build next.\n\nWhat's your daily AI setup?",
+  "hooks": [
+    "People argue about the best AI model. I just ship.",
+    "The AI stack behind my daily marketing agents costs less than the coffee I drink while it runs.",
+    "Everyone is benchmarking AI models. I'm running them 24/7 instead."
+  ],
+  "image_prompt_hint": "split scene: terminal/code editor with running agent log stream on one side, coffee cup on the desk, headline text 'THE AI I SHIP WITH', teal #19d3c5 + blue #6f8cff accents, clean light background, dark slate #0f172a text. NO price/cost meter graphic. NO dollar amounts on the image."
+}
+```
+
 ## Every Output Includes image_prompt
 
 Each piece gets an `image_prompt` placeholder field (the visual-creator fills full prompts). Write a short hint: subject, text-to-include, vibe. e.g. `"image_prompt_hint": "cartoonish dev with Claude logo, headline: 'Ships in 3 weeks'"`.
