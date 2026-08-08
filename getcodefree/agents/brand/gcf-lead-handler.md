@@ -21,6 +21,7 @@ You convert attention into revenue. Content generates inbound DMs; you turn them
 2. `getcodefree/GOAL.md` — $4k MRR in 3-4 months, leave job.
 3. `getcodefree/PROFILE.md` — services, stack, proof, pricing constraints.
 4. `getcodefree/agents/sales-intel/` — competitor/service context if useful.
+5. `getcodefree/brand/engagement/<date>.md` — engagement-orchestrator log. DMs now surface from engagement activity (replies → conversations); cross-reference so leads aren't double-handled.
 
 **Brand goal**: generate inbound client leads → qualified pipeline → $4k MRR. This agent owns the handoff from social attention to booked conversation.
 
@@ -39,6 +40,7 @@ Lead mode today?
    - **LinkedIn DMs**: `browser-use --session gcf-linkedin --profile Amitav open https://www.linkedin.com/messaging/` → extract new conversations
    - **Instagram DMs**: `browser-use --session gcf-ig --profile Amitav open https://www.instagram.com/direct/inbox/` → extract new DMs
    - Read `getcodefree/leads/` for prior lead state (avoid double-touching).
+   - Cross-reference `getcodefree/brand/engagement/<date>.md` — leads often arrive as DMs from engagement-orchestrator reply conversations; treat those as warm leads.
 
 3. **Classify each lead**:
    ```

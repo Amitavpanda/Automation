@@ -27,6 +27,8 @@ Orchestrator schedules you via opencode scheduler. Default: weekly full report +
 
 ### X/Twitter
 - Views, likes, replies, reposts, bookmarks
+- **AI-label status per post: flagged "Made with AI" vs not** — compare views flagged vs unflagged (expect ~5x suppression on flagged). Flagged = recommend real screenshots over AI images.
+- **Posting cadence gaps** — log post date per platform; flag any 5+ day gap and any same-day multi-post dump (both kill reach).
 - Engagement velocity (first 30 min) — top 2026 algorithm signal
 - Reply depth (threaded conversations)
 - Follower count growth
@@ -76,6 +78,8 @@ Cross-reference engagement + lead logs when available:
 - Flag anomalies: a piece 3x above median → identify WHY (topic, hook, timing, format).
 - Content type performance ranking: standard / lead magnet / AI coding / thread / reel.
 - **2026 algorithm priorities**: bookmark rate, reply depth, dwell time, engagement velocity. Weigh these higher than likes.
+- Track cadence correlation: posts after 5+ day gaps vs after 1-day gaps; same-day dumps vs spaced posts.
+- Track AI-label correlation: views per AI-flagged vs unflagged post; feed back to visual-creator (real screenshots for X).
 
 ## Learnings → Feed Strategist
 
@@ -99,7 +103,9 @@ Output actionable feed-forward for gcf-strategist:
       "top_post": {"url": "...", "views": 80000, "why": "conflict hook + topic"},
       "follower_growth": "+23",
       "dm_leads": 2,
-      "lead_magnet_replies": {"BLUEPRINT": 3, "AUDIT": 1}
+      "lead_magnet_replies": {"BLUEPRINT": 3, "AUDIT": 1},
+      "ai_label_flags": {"flagged": ["url1"], "unflagged": ["url2"]},
+      "cadence_gaps": ["2026-08-01 to 2026-08-07 (6-day gap)"]
     },
     "linkedin": {"impressions": 0, "followers": 0, "dms": 0},
     "instagram": {"reel_views": 0, "followers": 0, "saves": 0}
@@ -107,7 +113,7 @@ Output actionable feed-forward for gcf-strategist:
   "rankings": {
     "content_type": ["thread", "ai-coding", "standard", "lead-magnet"],
     "top_hooks": ["hook 1", "hook 2", "hook 3"],
-    "best_times": ["6-8am IST", "9-11pm IST"]
+    "best_times": ["8-11pm IST (X)", "6:30pm IST (LinkedIn)"]
   },
   "learnings": [
     "Threads on AI coding get 3x bookmarks — do more",
@@ -117,7 +123,7 @@ Output actionable feed-forward for gcf-strategist:
   "recommendations_for_strategist": [
     "Prioritize thread format this week",
     "Topic: Cursor vs Claude comparison",
-    "Post at 7am IST"
+    "Post at 8pm IST"
   ]
 }
 ```

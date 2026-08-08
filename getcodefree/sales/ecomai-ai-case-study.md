@@ -28,7 +28,7 @@ Micro-businesses in India need accounting, credit management, collections, and o
 
 ### Production Reality
 
-- **2 active businesses** running daily operations on the platform
+- **4 active businesses** running daily operations on the platform
 - Live at [ecombharatai.com](https://ecombharatai.com)
 - Merchants onboarding in under 5 days
 - Full-stack B2B/B2C: website, mobile app, backend, AI workflows

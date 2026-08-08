@@ -33,6 +33,12 @@ GetCodeFree company theme is **LIGHT**. The existing `getcodefree/brand/image-pr
 
 **Cartoonish rule:** Characters = cartoonish illustration style (not photorealism). Amitav's face rendered as a friendly cartoon character. Slightly exaggerated, expressive, meme-adjacent where appropriate.
 
+## X: REAL SCREENSHOTS OVER AI IMAGES (CRITICAL)
+
+- For **X**, prefer **real screenshots** (terminal, tool UI, build artifacts, dashboards from real projects) over AI-generated images. AI-generated imagery triggers X's "Made with AI" label → ~5x reach suppression.
+- Generate AI images for X ONLY when no real screenshot exists AND the post depends on the visual — and flag the label risk in output.
+- **LinkedIn / Instagram: light theme + cartoonish AI images still used** (no suppression issue there). Keep the light palette per THEME section.
+
 ## Image Prompts — Structure
 
 For each piece from copywriter, generate a full Gemini image prompt:
@@ -77,6 +83,18 @@ Design for interest + conflict: contrast, before/after, "stop doing X", big numb
 | IG post / carousel | 1080×1350 | 4:5 |
 | Reel cover | 1080×1920 | 9:16 |
 | Article cover | 1600×640 | 5:2 |
+| Article inline (per section) | 1200×628 | 1.91:1 |
+
+## Article Visual Production (MANDATORY for format `article`)
+
+When copywriter output includes `section_visuals` (articles), produce the FULL visual set — not just a cover:
+
+- **1 cover image** (1600×640, 5:2) — hero composition, article's core result/claim, punchy headline, before/after or split scene.
+- **1 inline image per section/phase** (1200×628, 1.91:1) — each visually explains ITS section: before/after, checklist, comparison, flow, stamp, timeline. Each carries the section's on-image text (≤6 words).
+- Keep the whole set **visually consistent**: same cartoonish character style, same light palette, same logo treatment across cover + all inline images (reads as one branded article, not random images).
+- Place inline images between sections in the final article layout (copywriter marks order via `section` title).
+- All images: light theme + cartoonish, NO fake metrics, NO dollar amounts on any image. Real tool logos only where the section mentions the tool.
+- Output as `article_visuals` in the asset JSON (cover + per-section inline images, ordered).
 
 ## Reels — 3×10s Clips → Merge in Canva
 
@@ -147,6 +165,10 @@ Clip N script (≤25 words):
       ],
       "video_scripts": [
         {"clip": 1, "script": "spoken text ≤25 words"}
+      ],
+      "article_visuals": [
+        {"position": "cover", "size": "1600×640", "prompt": "Image prompt for Gemini: ..."},
+        {"position": "inline", "section": "Phase 1: Pre-submission audit", "size": "1200×628", "on_image_text": "AUDIT BEFORE YOU SUBMIT", "prompt": "Image prompt for Gemini: ..."}
       ]
     }
   ]
@@ -158,3 +180,4 @@ Clip N script (≤25 words):
 - Every image prompt includes: user photo of Amitav (as cartoon char) + real logos for mentioned tools + short on-image text.
 - Reels: exactly 3×10s clips (Gemini limit) + Canva merge steps.
 - Images designed for conflict/viral interest, not bland stock vibes.
+- X: real screenshots preferred over AI-generated images (avoids "Made with AI" suppression label). AI-generated images OK for LI/IG — always light theme + cartoonish.

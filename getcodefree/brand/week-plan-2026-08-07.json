@@ -1,0 +1,328 @@
+{
+  "agent": "gcf-analytics",
+  "timestamp": "2026-08-07T09:00:00+05:30",
+  "period": "weekly",
+  "plan_name": "FINAL 1-Week Execution Blueprint — distribution-first, no-excuses",
+  "platforms": {
+    "x": {
+      "status": "prior findings carried, NOT re-scraped today",
+      "followers": 247,
+      "baseline": "unlabeled posts 16-78 views; pinned process post 788 views (~10x); 'Made with AI' labeled post 16 views vs 78 unlabeled (~5x suppression)",
+      "zero_signals": "0 replies, 0 bookmarks on recent posts; engagement velocity = 0",
+      "best_window": "20:00-23:00 IST, never midnight"
+    },
+    "linkedin": {
+      "status": "prior findings carried, NOT re-scraped today",
+      "followers": 1277,
+      "baseline": "reach hard-capped ~6% of followers (76 imp / 1277); company page dead (8 followers)",
+      "best_post": "only reactions came from real-data specifics (3 reactions)",
+      "reply_depth": 0
+    },
+    "instagram": {
+      "status": "PAUSED this week",
+      "reason": "company page dead (8 followers); user capacity goes to X + LI engagement where the 2026 algorithm lives"
+    }
+  },
+  "capacity_reconciliation": {
+    "user_offer": "up to 5 X posts + 5 LinkedIn posts per day, plus replies via @gcf-engagement-orchestrator",
+    "analytics_verdict": "POST LESS, ENGAGE MORE. Dumping 5/day with 247 followers cannibalizes reach, burns quality, triggers spam flags. The proven distribution lever at this size is engagement velocity + reply depth, not post volume.",
+    "actual_daily_target": {
+      "x_posts": 1,
+      "linkedin_posts": "1 every other day (4/week: Days 1,3,5,7)",
+      "x_replies": 5,
+      "linkedin_comments": 3,
+      "total_daily_social_minutes": "~75 min split: 30 min morning block + 45 min evening block"
+    },
+    "weekly_totals": {
+      "x_posts": 7,
+      "linkedin_posts": 4,
+      "x_replies": 35,
+      "linkedin_comments": 21
+    },
+    "message_to_user": "Your 5x capacity is real — spend it on replies (5 X + 3 LI daily), NOT 5 posts. 1 strong post beats 5 mediocre posts at 247 followers. The pinned process post got 10x reach with ONE post. Do that every day."
+  },
+  "week_schedule": [
+    {
+      "day": 1,
+      "date": "2026-08-07",
+      "weekday": "Friday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "PROCESS / building-in-public: 'Shipped X this week' with real specifics (Ceren One App Store live, EcomAI beta, or agent build). 1 post only. No AI label. Real numbers.",
+        "format": "standard",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies on lead-rich accounts (levelsio, gregisenberg, SahilBloom — they post US-evening/India-morning)",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies on lead-rich/competitor accounts + check own-post comments at 21:00 and 22:30 (reply within 2h)",
+        "non_negotiable": [
+          "Post EXACTLY 1 X post at 20:30 IST. No second post.",
+          "No 'Made with AI' label, no AI-generated image — real screenshot/terminal shot if visual.",
+          "Reply to every own-post comment by 22:30 IST (within 2h).",
+          "Hit 5 total X replies today (2 am + 3 pm). Every reply adds info/question, never 'great post'.",
+          "No posting between 00:00-06:00 IST."
+        ]
+      },
+      "linkedin": {
+        "post_time": "18:30 IST",
+        "post_topic": "ARCHITECTURE DEEP-DIVE, 'I' voice: 'How I approach production-grade AI agents' with real numbers from EcomAI/GetCodeFree work. No agency pitch. End with question.",
+        "format": "document post",
+        "engagement_slot": "18:00-19:00 IST — 1-2 LI comments on lead-rich/CTO accounts + check own-post comments at 20:30 (reply within 2h)",
+        "non_negotiable": [
+          "1 LinkedIn post max today (every-other-day cadence: Days 1,3,5,7 only).",
+          "'I' framing, senior-engineer voice. Zero 'we build apps' / 'book a call' language.",
+          "3 total LI comments today (1 am + 2 pm). Value-add only.",
+          "1 hashtag max.",
+          "Reply to every own-post comment within 2h."
+        ]
+      }
+    },
+    {
+      "day": 2,
+      "date": "2026-08-08",
+      "weekday": "Saturday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "AI CODING WORKFLOW: 'My daily AI stack' (OpenCode Go + DeepSeek V4 Flash for marketing agents + coding). Personal usage facts only — no price claims, no quoting others' metrics. 'Damn good' is fine.",
+        "format": "standard (ai-coding)",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies on AI/tech accounts",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies + own-post comment sweep at 21:00/22:30",
+        "non_negotiable": [
+          "1 X post only. 5 X replies total.",
+          "No AI image of a 'price meter' or dollar amounts — real screenshot of your setup.",
+          "Reply to own-post comments within 2h.",
+          "No LinkedIn post today (rest day). LI comments only: 3 total."
+        ]
+      },
+      "linkedin": {
+        "post_time": null,
+        "post_topic": "no post — every-other-day cadence",
+        "engagement_slot": "3 LI comments spread 08:00-09:00 and 18:00-19:00 IST on lead-rich/CTO accounts",
+        "non_negotiable": [
+          "0 LinkedIn posts today (spacing is the strategy — cap ~6% reach means each post must land).",
+          "3 LI comments, value-add."
+        ]
+      }
+    },
+    {
+      "day": 3,
+      "date": "2026-08-09",
+      "weekday": "Sunday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "OPINION WITH REAL NUMBERS: contrarian senior-engineer take with specific data (e.g. 'production debugging isn't the fun part — it's the only part that pays'; or a real build/refactor metric from client/EcomAI work). Conflict hooks win.",
+        "format": "standard (senior take)",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies + own-post comment sweep",
+        "non_negotiable": [
+          "1 X post. 5 X replies. Own-post comments within 2h.",
+          "Every number in the post must be real and personal — no invented metrics.",
+          "No AI label."
+        ]
+      },
+      "linkedin": {
+        "post_time": "18:30 IST",
+        "post_topic": "AI CODING WORKFLOW, 'I' voice: 'My Cursor/Claude setup for shipping' — senior sharing workflow, not selling. End with a question.",
+        "format": "document post",
+        "engagement_slot": "18:00-19:00 IST — 1-2 LI comments + own-post comment check at 20:30",
+        "non_negotiable": [
+          "1 LI post (Day 3 of every-other-day cadence).",
+          "3 LI comments total. 1 hashtag max.",
+          "Reply to own-post comments within 2h."
+        ]
+      }
+    },
+    {
+      "day": 4,
+      "date": "2026-08-10",
+      "weekday": "Monday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "THREAD (highest reach format): 5-7 tweets on one sharp process/lesson (e.g. 'How I shipped Ceren One to App Store with AI'). Tweet 10 slot = lead magnet CTA: 'Reply BLUEPRINT and I'll DM you our 7-Day MVP Blueprint template'.",
+        "format": "thread + lead-magnet CTA (BLUEPRINT)",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies",
+        "engagement_slot_pm": "19:00-21:30 IST — 3 X replies + aggressive own-thread comment sweep at 21:00, 22:00, 22:30 (thread replies feed the 2026 reply-depth algorithm)",
+        "non_negotiable": [
+          "1 thread only. Do NOT post a second piece today.",
+          "Every thread reply answered — reply to ANY comment on the thread within 2h, twice in the evening if needed.",
+          "5 X replies total on top of own-thread replies.",
+          "Log BLUEPRINT keyword replies to lead-handler immediately.",
+          "DAY 4 CHECKPOINT: review this morning's metrics (see day4_checkpoint section) — adjust course if missing targets."
+        ]
+      },
+      "linkedin": {
+        "post_time": null,
+        "post_topic": "no post",
+        "engagement_slot": "3 LI comments",
+        "non_negotiable": [
+          "0 LI posts today.",
+          "3 LI comments, value-add."
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "date": "2026-08-11",
+      "weekday": "Tuesday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "LEAD MAGNET STANDALONE: pure value post (framework/template insight) with reply CTA keyword (BLUEPRINT or AUDIT). Purpose: first DM lead of the week.",
+        "format": "lead-magnet",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies + own-post comment sweep",
+        "non_negotiable": [
+          "1 post. 5 replies. Own-post comments within 2h.",
+          "Lead magnet keyword must match Day 4's (BLUEPRINT) so lead-handler has one clean funnel.",
+          "If a keyword reply or DM arrives: it goes to lead-handler same evening, not tomorrow."
+        ]
+      },
+      "linkedin": {
+        "post_time": "18:30 IST",
+        "post_topic": "ENGINEERING OPINION, 'I' voice: 'What production-grade actually means' — real checklist from shipped work. No pitch. End with question.",
+        "format": "document post",
+        "engagement_slot": "18:00-19:00 IST — 1-2 LI comments + own-post comment check",
+        "non_negotiable": [
+          "1 LI post (Day 5 of cadence). 3 LI comments. Reply to own-post comments within 2h."
+        ]
+      }
+    },
+    {
+      "day": 6,
+      "date": "2026-08-12",
+      "weekday": "Wednesday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "CONTRARIAN / CONFLICT HOOK: sharp take on AI dev hype from real experience (e.g. 'Everyone's benchmarking models. I'm shipping with them.' or 'You don't need a stack audit, you need to ship.'). Design for bookmarks + replies.",
+        "format": "standard (contrarian)",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies + own-post comment sweep",
+        "non_negotiable": [
+          "1 post. 5 replies. Own-post comments within 2h.",
+          "If by now median views < 100 with 0 bookmarks AND 0 replies — engagement volume goes to 8 replies/day effective immediately (see day4_checkpoint)."
+        ]
+      },
+      "linkedin": {
+        "post_time": null,
+        "post_topic": "no post",
+        "engagement_slot": "3 LI comments",
+        "non_negotiable": [
+          "0 LI posts today.",
+          "3 LI comments."
+        ]
+      }
+    },
+    {
+      "day": 7,
+      "date": "2026-08-13",
+      "weekday": "Thursday",
+      "timezone": "IST (UTC+5:30)",
+      "x": {
+        "post_time": "20:30 IST",
+        "post_topic": "WEEK RECAP building-in-public: 'This week on the ship log' — REAL scraped metrics only (views, replies, bookmarks from gcf-analytics daily checks). Shows proof of traction; founders love numbers.",
+        "format": "standard (building-in-public)",
+        "engagement_slot_am": "08:00-08:30 IST — 2 X replies",
+        "engagement_slot_pm": "19:00-21:00 IST — 3 X replies + final own-post comment sweep",
+        "non_negotiable": [
+          "1 post. 5 replies. Own-post comments within 2h.",
+          "Recap numbers MUST come from actual analytics scrapes — never estimate.",
+          "End recap with a question to force reply depth."
+        ]
+      },
+      "linkedin": {
+        "post_time": "18:30 IST",
+        "post_topic": "CLIENT-RESULT / BUILD RECAP with real numbers, 'I' voice: what shipped, what it cost in time, what the client got. Document-style, no agency sell.",
+        "format": "document post",
+        "engagement_slot": "18:00-19:00 IST — 1-2 LI comments + own-post comment check",
+        "non_negotiable": [
+          "1 LI post (final of week). 3 LI comments. Reply to own-post comments within 2h.",
+          "Facts only from HUMAN.md / proof-assets.md."
+        ]
+      }
+    }
+  ],
+  "success_criteria": {
+    "note": "All targets are 'following to hit' — goals we set, not scraped facts.",
+    "x": {
+      "median_views_last_5_posts": ">= 100 (baseline 16-78)",
+      "one_post_views": ">= 300 (pinned process post proves 788 is reachable)",
+      "bookmarks": ">= 1 (currently 0; top 2026 signal)",
+      "first_inbound_reply": ">= 1 non-bot reply on own post (currently 0)",
+      "inbound_dm_or_keyword": ">= 1 BLUEPRINT/AUDIT keyword reply or DM (lead-handler converts)",
+      "follower_growth": ">= +10"
+    },
+    "linkedin": {
+      "one_post_impressions": ">= 100 (breaks 76 baseline)",
+      "posts_with_5_reactions": ">= 2",
+      "first_comment_on_own_post": ">= 1 (reply depth currently 0)",
+      "profile_views_from_content": ">= 1 (check analytics)",
+      "follower_growth": ">= +15"
+    },
+    "engagement": {
+      "x_replies_posted": "35 (5/day x 7)",
+      "linkedin_comments_posted": "21 (3/day x 7)",
+      "own_post_comments_answered_within_2h": "100%",
+      "reply_threads_with_depth_2": ">= 2 (a reply that got a second reply = algorithm win)"
+    },
+    "win_definition": "WEEK IS A WIN IF: >= 1 bookmark on X, >= 1 non-bot reply on own X post, >= 1 inbound DM/keyword lead, AND LinkedIn impressions break 76 on any post. Everything else is fuel for Week 2."
+  },
+  "day4_checkpoint": {
+    "when": "Morning of 2026-08-10 (Day 4) — after 3 X posts + 1 LI post are live",
+    "metrics_to_read": [
+      "X: median views across Day 1-3 posts",
+      "X: bookmarks count (expect >= 0 so far)",
+      "X: replies on own posts",
+      "LI: impressions + reactions on Day 1 and Day 3 posts"
+    ],
+    "if_missing_targets": {
+      "trigger": "median X views < 100 AND 0 bookmarks AND 0 own-post replies AND LI impressions < 76",
+      "double_down": [
+        "X replies: 5 -> 8/day (all on lead-rich accounts, within 30 min of their posts)",
+        "X post time: 20:30 -> 19:30 IST (earlier US west-coast evening overlap)",
+        "Lead magnets: force a second BLUEPRINT post by Day 5 (not Day 5 alone)",
+        "LI comments: 3 -> 4/day"
+      ],
+      "stop": [
+        "Any format with 2 consecutive posts under 50 views -> dropped for Week 2",
+        "AI-generated images if any visual piece underperformed -> real screenshots only, permanently",
+        "LI posts if 2 consecutive under 76 impressions -> shift that posting slot to an X reply block",
+        "Posting outside 19:30-23:00 IST window -> never again"
+      ]
+    },
+    "if_hitting_targets": {
+      "keep": "same cadence for Days 4-7",
+      "add": "2nd LI post on Day 6 (3 -> 4/week) and push one reply thread to depth 3"
+    }
+  },
+  "rankings": {
+    "content_type": ["thread", "process/building-in-public", "ai-coding-workflow", "contrarian-opinion", "lead-magnet"],
+    "top_hooks": [
+      "'Shipped X this week' + real number (process post = 10x reach)",
+      "Everyone's benchmarking models. I'm shipping with them.",
+      "You don't need a stack audit, you need to ship."
+    ],
+    "best_times": ["20:00-23:00 IST X", "18:30 IST LinkedIn", "never 00:00-06:00 IST"]
+  },
+  "learnings": [
+    "'Made with AI' label suppressed views ~5x (16 vs 78) — kill it permanently.",
+    "Process/building-in-public content got 10x reach (788 vs 78) — highest-proven X lever.",
+    "LinkedIn reach caps ~6% of followers; the ONLY post with reactions had real-data specifics — every LI post needs a concrete number.",
+    "Reply depth and bookmarks are at 0 — that is the entire gap. Engagement, not more posts, is the fix.",
+    "Company page (IG) is dead at 8 followers — zero budget this week.",
+    "This week's plan front-loads the two things that actually move a 247-follower account: 1 strong post/day + 5 value replies/day."
+  ],
+  "single_most_important_habit": "THE 19:00-21:30 IST EVENING BLOCK: post at 20:30, then reply to every own-post comment within 2h + 3 value-add X replies. Every single day, no exceptions. This is the only habit that generates reply depth + engagement velocity — the two 2026 signals currently at zero.",
+  "single_biggest_thing_to_avoid": "Dumping more than 1 post/day on any platform AND never using 'Made with AI' labels or AI-generated images — proven 5x view suppression. At 247 followers, every post is precious distribution; one strong post at 20:30 beats five posts scattered across the day.",
+  "recommendations_for_strategist": [
+    "Enforce cadence guard HARD: max 1 X post/day at 20:30 IST, max 1 LI post every other day at 18:30 IST. Reject any 5-posts-a-day plan from user — capacity goes to replies, not posts.",
+    "Copywriter: permanent no-'Made with AI'-label rule + every post must contain at least one real personal number. No quoting third-party metrics as own.",
+    "Engagement-orchestrator: MANDATORY daily 2-block run (08:00-08:30 + 19:00-21:00 IST). Reply to own-post comments within 2h (5h absolute max). Daily floor: 5 X replies + 3 LI comments. Target big accounts within 30 min of their posts (levelsio, gregisenberg, SahilBloom US-morning = India evening).",
+    "Visual-creator: real screenshots/terminal captures over AI images. Light theme. Never 'Made with AI'.",
+    "Brand-orchestrator: read this plan + gcf-analytics daily check BEFORE each publish. Publish gate: max 2 pieces/day across all platforms (1 X + 1 LI every other day).",
+    "Lead-handler: BLUEPRINT funnel active Days 4-5. Any keyword reply or DM converts same-day, not next-day.",
+    "No Instagram this week — company page dead, capacity reallocated to X/LI engagement.",
+    "Week 2 planning (Aug 14): this plan + actual scraped metrics from Day 1-7. Only then decide IG/Reels revival or thread cadence increase."
+  ]
+}

@@ -62,6 +62,19 @@ TOP 10 TODAY
 ...
 ```
 
+## Cadence Guard & Timing (MANDATORY)
+
+**Tiered daily model (operator capacity): 1 LARGE + 2 SMALL posts per day + replies.**
+
+- **1 LARGE (hero) post/day** — high-effort flagship: process deep-dive, thread (3-10 tweets), lead magnet, article promo, or client result. This is the reach play (pinned-process-post formula: 788 views vs 36-78 for small). Alternate platform: X on process/thread days, LinkedIn for the weekly document/PDF post.
+- **2 SMALL posts/day** — quick standard takes, echoes, hot-take riffs, AI-coding tips, opinion one-liners. Light lift, spaced ≥3h apart, never same-topic as the LARGE post (cannibalization).
+- **Total: max 3 posts/day, never more.** Dumps (5+ posts, catch-up bursts) kill reach — spread, don't stack.
+- **No 5+ day gaps.** Inactivity kills baseline reach; if a platform is missed, run that day's tier next day — do not stack.
+- **X content mix: 70% process / 30% opinion.** Process = builds, workflows, how-to, shipped results. Opinion = takes, predictions, contrarian views.
+- **LinkedIn: minimum 1 post/week (the weekly document/PDF post), plus smalls on alternate days**, spaced (never multi-post days). Document/PDF post = second distribution for the newsletter.
+- **NEVER allocate company-page content.** LinkedIn effort goes to Amitav's personal profile only (company page = 8 followers, dead — skip).
+- **Timing:** LARGE post on X best **20:00-23:00 IST** (never midnight). LinkedIn LARGE ~**18:30 IST**. SMALL posts 08:00-10:00 IST and 14:00-16:00 IST windows, never midnight. Replies/engagement 08:00-08:30 + 19:00-21:00 IST (handled by engagement-orchestrator). Allocate slots accordingly.
+
 ## Platform Allocation
 
 Allocate selected items across platforms by type:
@@ -101,8 +114,10 @@ Cross-posting: same core insight, different framing per platform. LinkedIn never
       "item_url": "URL",
       "platform": "x | linkedin | instagram",
       "format": "standard | lead-magnet | thread | reel | carousel",
+      "tier": "large | small",
       "angle": "the specific take/framing to use",
-      "cta": "reply keyword | DM | none"
+      "cta": "reply keyword | DM | none",
+      "timing": "suggested IST window (LARGE X 20:00-23:00, LARGE LI ~18:30, SMALL 08:00-10:00 / 14:00-16:00)"
     }
   ]
 }

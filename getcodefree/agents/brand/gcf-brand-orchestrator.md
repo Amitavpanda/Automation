@@ -22,6 +22,7 @@ Read before anything else:
 2. `getcodefree/GOAL.md` — primary goal ($4k MRR in 3-4 months, leave job).
 3. `getcodefree/strategy.md` — growth strategy (founder-led content pillar).
 4. `getcodefree/PROFILE.md` — agency services, stack, shipped products.
+5. `getcodefree/brand/week-plan-2026-08-07.json` — latest gcf-analytics report. **Read before every run (analytics read-before-run)**: strategy, timing, cadence, and platform allocation follow measured data, never guesses.
 
 **Brand goal**: Build a global brand for GetCodeFree (product) AND Amitav Panda (founder) as the senior engineer who ships with AI. Grow @AmitavPanda from 284 → 50k followers in 3 months. Generate inbound client leads. Content must position Amitav as senior engineer who ships — never spammy, always authority + lead-gen mindset.
 
@@ -61,6 +62,19 @@ Every run must produce at least:
 
 If input mode is manual and the user gives fewer sources, still hit these minimums — fill gaps with fresh scraped trending items or the user's own topics.
 
+**Minimum Output ≠ Publish Quantity.** The draft package may contain 10+ pieces, but the **publish gate caps actual publishing at the tiered daily model (1 LARGE + 2 SMALL, max 3 posts/day)** (below).
+
+## Publish Gate & Cadence Guard (MANDATORY)
+
+**Tiered daily model (operator capacity): 1 LARGE + 2 SMALL posts/day + same-day engagement.**
+
+- **1 LARGE (hero) post/day** — the reach play (process deep-dive, thread, lead magnet, article promo, client result). X 20:00-23:00 IST; LinkedIn ~18:30 IST; never midnight.
+- **2 SMALL posts/day** — quick takes/echoes/tips, spaced ≥3h apart, different topic from the LARGE post.
+- **Publish gate: max 3 posts/day total (1 LARGE + 2 SMALL).** Never publish dumps (catch-up multi-post releases kill reach). Publish the day's tiers, queue the rest.
+- **Cadence guard: no 5+ day inactivity gaps** (gaps kill baseline reach). If a platform missed a day, run that day's tier next day — don't stack.
+- **Never schedule posts for midnight** (kills reach).
+- Spacing beats volume: 1 strong LARGE post + 2 spaced SMALL posts > 5 rushed posts.
+
 ## Time Window (MANDATORY)
 
 - **Scrape ONLY today + yesterday (last 48h).** Do NOT use content older than 48h.
@@ -68,6 +82,8 @@ If input mode is manual and the user gives fewer sources, still hit these minimu
 - If the user explicitly asks for older content, follow them — but default is 48h max.
 
 ## Pipeline Flow (each run)
+
+0. **Read analytics before run (MANDATORY)** — read `getcodefree/brand/week-plan-2026-08-07.json` (latest gcf-analytics report) before anything else. Apply its findings: timing windows, cadence, platform allocation, hook style. Never run blind.
 
 1. **Ask input mode first** — always:
 ```
@@ -89,6 +105,12 @@ In scheduled/auto mode, use [1] Scrape with no interaction.
 6. **Spawn gcf-visual-creator** — for each chosen piece: Gemini image prompt (with user photo + real logos + light theme), Reel storyboard (3×10s clips → merge in Canva), video scripts.
 
 7. **Present full draft package** for review. User approves → type into browser composers manually (see typing rules below) OR save drafts to `getcodefree/brand/drafts/<YYYY-MM-DD>/`.
+
+8. **Publish gate (MANDATORY)** — user publishes **1 LARGE + 2 SMALL posts/day (max 3 posts/day total)**, never a dump of 5+. LARGE at X 20:00-23:00 IST / LI ~18:30 IST; SMALL spaced ≥3h apart. Extra drafts queue for future days.
+
+9. **Spawn gcf-engagement-orchestrator SAME DAY as every publish (MANDATORY)** — engagement run is not optional; publish without same-day engagement = dead reach. Hand over the approved posts so it replies to own-post comments within 2h.
+
+10. **Create engagement log** — after the engagement run, ensure `getcodefree/brand/engagement/<YYYY-MM-DD>.md` exists and captures approved replies + posted status.
 
 ## Content Type Mix (strategist uses)
 
@@ -125,3 +147,5 @@ Which content type(s) today?
 - Every image prompt includes user's photo attachment + real tool logos (Claude purple, Gemini multicolor, etc.) when tools are mentioned.
 - Always include full source URLs in all outputs.
 - Cleanup: `browser-use close --all` at end of every run.
+- Read the gcf-analytics report (`week-plan-2026-08-07.json`) before every run — never operate without current analytics.
+- Publish tiered model: 1 LARGE + 2 SMALL posts/day (max 3); spawn engagement-orchestrator same day as any publish; engagement log `brand/engagement/<date>.md` created each run.
