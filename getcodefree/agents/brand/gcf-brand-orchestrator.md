@@ -100,11 +100,11 @@ In scheduled/auto mode, use [1] Scrape with no interaction.
 
 4. **User selects** which tweets/posts to use. Pass ONLY the selected items to copywriter. In auto mode, pass all top 10.
 
-5. **Spawn gcf-copywriter** — for the selected items ONLY, draft platform-appropriate copy (X posts/threads, LinkedIn post, IG caption, hooks) to hit Minimum Output Per Day. Every output includes `image_prompt` placeholder.
+5. **Spawn gcf-copywriter** — for the selected items ONLY, draft platform-appropriate copy (X posts/threads, LinkedIn post, IG caption, hooks) to hit Minimum Output Per Day. Every output includes `image_prompt` placeholder. It drafts human-first single-pass and self-certifies via `human_check` (no separate humanizer agent exists; do not spawn one). Verify each piece's `human_check` present; missing = reject back to copywriter.
 
 6. **Spawn gcf-visual-creator** — for each chosen piece: Gemini image prompt (with user photo + real logos + light theme), Reel storyboard (3×10s clips → merge in Canva), video scripts.
 
-7. **Present full draft package** for review. User approves → type into browser composers manually (see typing rules below) OR save drafts to `getcodefree/brand/drafts/<YYYY-MM-DD>/`.
+7. **Present full draft package** for review. User approves → type into browser composers manually (see typing rules below) OR save drafts to `getcodefree/brand/drafts/<YYYY-MM-DD>/`. Review gate (LAST human pass, unchanged): operator edits freely. If a piece fails the speak-it test on review, reject the whole draft package back to copywriter with the offending lines quoted — this closes the loop so the tell disappears from future runs, not just tonight's post.
 
 8. **Publish gate (MANDATORY)** — user publishes **1 LARGE + 2 SMALL posts/day (max 3 posts/day total)**, never a dump of 5+. LARGE at X 20:00-23:00 IST / LI ~18:30 IST; SMALL spaced ≥3h apart. Extra drafts queue for future days.
 

@@ -1,0 +1,151 @@
+{
+  "ideal_client_profiles": [
+    {
+      "id": "ICP1",
+      "name": "FMCG_Grocery_Wholesaler_Tally",
+      "priority": 1,
+      "company": {
+        "type": ["FMCG_wholesaler", "grocery_distributor", "general_trade_distributor"],
+        "size": ["1-20"],
+        "geography": ["India"],
+        "selling": ["B2B_retailers", "credit_terms"],
+        "structure": ["single_branch", "multi_branch"]
+      },
+      "buyer_persona": {
+        "title": ["Owner", "Partner", "Proprietor"],
+        "age": ["35-55"],
+        "language": ["Hindi", "Regional", "English"],
+        "trusts": ["CA", "Referrals", "Trade_network"],
+        "pains": [
+          "receivables_stuck_90_days",
+          "manual_ledger",
+          "chasing_payments",
+          "tally_renewal_cost",
+          "no_collections_automation"
+        ],
+        "decision_drivers": ["collections", "cost_savings", "visibility"]
+      },
+      "trigger_signals": [
+        "uses_tally",
+        "complains_unpaid_dues",
+        "multi_branch_expansion",
+        "ca_mandated_tally",
+        "growing_retailer_list"
+      ],
+      "offer_fit": ["tally_import", "ai_dashboard", "whatsapp_collections", "storefront", "multi_branch_pl"],
+      "budget": "below_tally_renewal_18_54k_inr",
+      "sourcing": ["IndiaMART", "TradeIndia", "Justdial", "Google_Maps_wholesale", "Tally_groups", "CA_referrals", "distributor_network"]
+    },
+    {
+      "id": "ICP2",
+      "name": "Cloud_Kitchen_Restaurant_Food",
+      "priority": 2,
+      "company": {
+        "type": ["cloud_kitchen", "restaurant", "qsr_chain", "food_delivery"],
+        "size": ["1-50"],
+        "geography": ["India"],
+        "selling": ["B2C_food", "B2B_corporate"],
+        "structure": ["single_outlet", "multi_outlet"]
+      },
+      "buyer_persona": {
+        "title": ["Owner", "Founder"],
+        "age": ["25-40"],
+        "language": ["English", "Hindi"],
+        "trusts": ["WhatsApp", "Instagram", "Peer_groups"],
+        "pains": [
+          "order_chaos",
+          "no_storefront_app",
+          "manual_inventory",
+          "delivery_app_commission",
+          "collections_from_partners"
+        ],
+        "decision_drivers": ["speed_to_live", "commission_savings", "order_flow"]
+      },
+      "trigger_signals": [
+        "active_instagram",
+        "multi_outlet",
+        "scaling_posts",
+        "delivery_app_complaints",
+        "food_tech_community"
+      ],
+      "offer_fit": ["launch_layer", "whatsapp_ordering", "inventory", "ai_insights", "direct_ordering_channel"],
+      "budget": "mid_launch_sprint_plus_subscription",
+      "sourcing": ["Instagram_reels", "F&B_whatsapp_groups", "food_tech_communities", "LinkedIn"]
+    },
+    {
+      "id": "ICP3",
+      "name": "Ecommerce_Fashion_D2C_Brand",
+      "priority": 3,
+      "company": {
+        "type": ["D2C_brand", "fashion", "ecommerce", "B2C"],
+        "size": ["2-50"],
+        "geography": ["India", "Global_later"],
+        "selling": ["B2C_online", "B2C_whatsapp", "marketplace"],
+        "structure": ["single_brand", "multi_category"]
+      },
+      "buyer_persona": {
+        "title": ["Founder", "CMO"],
+        "age": ["25-45"],
+        "language": ["English"],
+        "trusts": ["LinkedIn", "Peer_founders", "Data"],
+        "pains": [
+          "fragmented_ops",
+          "manual_whatsapp_orders",
+          "no_ai_insights",
+          "margin_blindspots",
+          "unified_storefront"
+        ],
+        "decision_drivers": ["automation", "brand", "ai_insights", "growth"]
+      },
+      "trigger_signals": [
+        "shopify_wordpress",
+        "marketplace_seller",
+        "scaling_campaigns",
+        "seasonal_spikes",
+        "d2c_communities",
+        "ai_automation_talk"
+      ],
+      "offer_fit": ["storefront", "operations", "whatsapp", "ai_insights", "shopify_integration_roadmap"],
+      "budget": "highest_growth_budget_global_pricing",
+      "sourcing": ["LinkedIn", "Instagram", "Shopify_communities", "D2C_groups", "ecom_newsletters"]
+    },
+    {
+      "id": "ICP4",
+      "name": "Offline_Business_Going_Online",
+      "priority": 4,
+      "company": {
+        "type": ["manufacturer", "exporter", "supplier", "trader", "boutique", "services"],
+        "size": ["1-50"],
+        "geography": ["India", "Export_markets"],
+        "selling": ["offline_market", "showroom", "catalog", "phone_whatsapp", "marketplace_listing"],
+        "structure": ["offline_first"]
+      },
+      "buyer_persona": {
+        "title": ["Owner", "Proprietor", "Director"],
+        "age": ["30-55"],
+        "language": ["Hindi", "Regional", "English"],
+        "trusts": ["Referrals", "Trade_network", "Affordability"],
+        "pains": [
+          "invisible_online",
+          "no_storefront",
+          "manual_phone_orders",
+          "dont_know_how_to_start",
+          "cost_fear"
+        ],
+        "decision_drivers": ["affordable_launch", "speed", "hand_holding"]
+      },
+      "trigger_signals": [
+        "indiamart_listing",
+        "tradeindia_listing",
+        "alibaba_listing",
+        "justdial_listing",
+        "google_maps_contact",
+        "digital_transformation_intent"
+      ],
+      "offer_fit": ["launch_layer_only", "website_app_storefront", "upsell_ops_whatsapp_ai"],
+      "budget": "entry_level_then_upsell",
+      "sourcing": ["IndiaMART", "TradeIndia", "Alibaba", "Justdial", "Google_Maps", "classifieds", "trade_export_directories", "whatsapp_broadcast"]
+    }
+  ],
+  "scoring_priority": ["ICP1", "ICP2", "ICP3", "ICP4"]
+}
