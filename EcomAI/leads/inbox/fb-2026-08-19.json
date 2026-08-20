@@ -1,0 +1,39 @@
+{
+  "agent": "ecomai-fb-lead-scraper",
+  "timestamp": "2026-08-19T17:50:00+05:30",
+  "platform": "facebook",
+  "icp_focus": ["icp1", "icp2", "icp3", "icp4"],
+  "categories_scraped": ["wholesale", "grocery", "fashion", "saree", "boutique", "restaurant", "cloud-kitchen"],
+  "slot": "evening",
+  "run_status": "completed",
+  "run_summary": {
+    "candidates_seen": 30,
+    "qualified_output": 0,
+    "new_leads": 0,
+    "updated_leads": 0,
+    "skipped_total": 15,
+    "skipped_by_reason": {
+      "inactive": 12,
+      "aggregator": 2,
+      "no-contact": 1
+    }
+  },
+  "items": [],
+  "skipped": [
+    { "handle": "padmatraders.berhampur", "reason": "inactive", "detail": "textile wholesaler ICP1, WhatsApp +91 95833 77377 + email bprsubudhi@gmail.com, 5.8K flw, last verifiable post 8 Jul 2026 (~6w > 30d gate); strong requalify candidate" },
+    { "handle": "SaNS.Odisha", "reason": "inactive", "detail": "food/beverage distributor ICP1, WhatsApp +91 83277 84904 + phone + email, 369 flw, last post Sep 2020" },
+    { "handle": "bhawanidistributorsodisha", "reason": "inactive", "detail": "rice mill hardware distributor, phone +91 98616 69595, 11 flw, last post 28 Aug 2015" },
+    { "handle": "profile.php?id=61574158708113", "reason": "inactive", "detail": "Odisha Wholesale Distributors (Nigam Supplier), wholesale/supply shop Hanspal Bhubaneswar, phone +91 94393 93585 + email, last post 12 Apr 2025" },
+    { "handle": "profile.php?id=100064306208987", "reason": "inactive", "detail": "T-shirt Wholesale & manufacturing Odisha, WhatsApp +91 86101 93311 + email, 30 flw, last post Jul 2020" },
+    { "handle": "profile.php?id=100067702416317", "reason": "inactive", "detail": "Bsk Food And Agro Products, FMCG distributor Odisha ICP1, phone +91 79780 66285 + email + site bskfoodandagro.com, 21 flw, last post Jan 2020" },
+    { "handle": "queenscollectionodisha", "reason": "inactive", "detail": "Queens Collection bridal saree showroom Berhampur/Cuttack/BBSR, landline 0671 220 3605, 156 flw, last post Oct 2021" },
+    { "handle": "FashionEraBoutiqueBBSR", "reason": "inactive", "detail": "Fashion Era Boutique, phone +91 99370 11882 + email + site fashionfeb.com, 170 flw, last post Feb 2020" },
+    { "handle": "biriyanisthan", "reason": "no-contact", "detail": "cloud kitchen BBSR, 237 flw, Messenger only (no phone/WA/email), review 7y old" },
+    { "handle": "melanze007", "reason": "inactive", "detail": "Melanze cloud kitchen BBSR ICP2, WhatsApp +91 74400 00183 + phone + email, 143 flw, last post Jun 2021" },
+    { "handle": "AnasBotique", "reason": "inactive", "detail": "Ana's Boutique Chandrasekharpur, phone +91 90901 99207, 1.5K flw, last post Oct 2013" },
+    { "handle": "shopwithsweeties", "reason": "inactive", "detail": "Sweetie P's boutique Kharavela Nagar, phone +91 88957 26695, 403 flw, last post Jul 2019" },
+    { "handle": "profile.php?id=100054230090931", "reason": "inactive", "detail": "Faith Boutique Nayapalli, phone +91 83289 44601, 1K flw, last post Sep 2023" },
+    { "handle": "Odisha-Wholesale-Bazaar", "reason": "aggregator", "detail": "community marketplace 'open virtual market place', not a single business" },
+    { "handle": "All-Odisha-Wholesale-Bazaar", "reason": "aggregator", "detail": "internet marketing/advertising service, not a seller" }
+  ]
+}

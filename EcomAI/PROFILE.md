@@ -6,6 +6,39 @@ See `../CLAUDE.md` for system context. See `../HUMAN.md` for operator profile (A
 
 ---
 
+## 0. Public Positioning — ecombharatai.com (SOURCE OF TRUTH for all copy)
+
+Public brand: **EcomApp AI / EcomAI**. Landing page: https://ecombharatai.com
+
+**The headline:** *"The AI Operating System for Going Online"* — **Website.App.Accounts.AI. One system. Not five vendors.**
+
+**The elevator line:** EcomAI is the system a business installs to go online — a branded storefront and app, accounts that reconcile themselves, and an AI that tells you exactly what to do next.
+
+**The anti-line:** *"Not a website builder. Not an accounting tool. An entire AI Operating System for the whole business."*
+
+**Who it's for (ALL of these — never narrow to one segment):**
+- B2B wholesalers & distributors (replace ledger book + scattered chats with one system for orders, credit, collections)
+- D2C & fashion brands (storefront, inventory, accounts not in three tabs + two spreadsheets)
+- Agencies & resellers (white-label EcomAI for clients instead of stitching five tools)
+- First-time online sellers (whole system on day one, not a checklist of tools)
+
+**Core message:** you don't need six vendors (website + books + stock + dashboards + WhatsApp + agency). You need ONE system that owns the whole outcome.
+
+**Key site facts to reuse in copy:**
+- Works in Hindi, English, Hinglish
+- Self-serve, live the same day
+- Three pillars: Digital Presence (branded storefront + app), Operations & Accounts (orders, credit, inventory, invoices, books in sync), AI Intelligence (what needs attention today)
+- AICA AI assistant — "like a senior manager who never sleeps", voice + text, Hindi/English
+- Credit analysis & risk alerts ("Never ship to an overdue account again")
+- Smart reconciliation, inventory + warehouse, analytics dashboard, GST invoices in two taps, PO / e-way bills
+- Built to scale globally — GST-ready and Hindi-first today
+- Founding 100: first 100 businesses at founder pricing (self-serve, no sales team)
+- Contact: WhatsApp +91 7077 404655, Bengaluru
+
+**Copy rules:** NEVER describe EcomAI as "just a commerce platform for wholesalers" or "a website/app builder." ALWAYS frame as **one AI operating system replacing five vendors** — website, app, accounts, AI in one. Segment list is broad (B2B, D2C, agencies, first-time sellers).
+
+---
+
 ## 1. What EcomAI Is
 
 EcomAI is an **AI-powered commerce launch and automation platform** that helps businesses go live with a website, mobile app, and operational workflows **in under 5 days**.
@@ -19,6 +52,9 @@ Not just a website or app builder. EcomAI is a full-stack B2B and B2C automation
 
 **Core positioning line:**
 > "Launch your business website, mobile app, and automation workflows in under 5 days — and automate the credit, collections, inventory, and communication work that runs behind it."
+
+**Public positioning (site-first, for any outward copy):**
+> "The AI Operating System for Going Online — Website.App.Accounts.AI. One system, not five vendors. Built for B2B wholesalers, D2C & fashion brands, agencies/resellers, and first-time online sellers."
 
 ---
 

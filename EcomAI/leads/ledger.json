@@ -1,0 +1,348 @@
+{
+  "version": 1,
+  "updated_at": "2026-08-19T18:30:00+05:30",
+  "leads": {
+    "instagram|@cotton.handicrafts|+918079043335": {
+      "lead_id": "instagram|@cotton.handicrafts|+918079043335",
+      "platform": "instagram",
+      "handle": "@cotton.handicrafts",
+      "page_name": "Cotton Handicrafts",
+      "category": "clothing",
+      "icp": "icp4",
+      "location": null,
+      "contacts": {
+        "whatsapp": [
+          "+918079043335"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 0,
+      "follower_tier": "unknown",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": true,
+      "score": 9,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/cotton.handicrafts",
+      "offer_angle": "wholesale catalog + storefront + WhatsApp order flow + invoices + AI",
+      "outreach_channel": "whatsapp",
+      "notes": "migrated from ig-2026-08-16.json; requalify (activity/website) on next visit"
+    },
+    "instagram|@mandmdesigns._|+917984590068": {
+      "lead_id": "instagram|@mandmdesigns._|+917984590068",
+      "platform": "instagram",
+      "handle": "@mandmdesigns._",
+      "page_name": "M&M Designs",
+      "category": "clothing",
+      "icp": "icp1",
+      "location": null,
+      "contacts": {
+        "whatsapp": [
+          "+917984590068"
+        ],
+        "phone": [
+          "+918849279544"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 0,
+      "follower_tier": "unknown",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": true,
+      "score": 8,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/mandmdesigns._",
+      "offer_angle": "product catalog + storefront + order tracking + invoices + AI",
+      "outreach_channel": "whatsapp",
+      "notes": "migrated from ig-2026-08-16.json; wholesaler (icp1) per classifier; requalify on next visit"
+    },
+    "instagram|@eva_collctn|+917025407876": {
+      "lead_id": "instagram|@eva_collctn|+917025407876",
+      "platform": "instagram",
+      "handle": "@eva_collctn",
+      "page_name": "Eva Collections",
+      "category": "clothing",
+      "icp": "icp3",
+      "location": null,
+      "contacts": {
+        "whatsapp": [
+          "+917025407876"
+        ],
+        "phone": [
+          "+917025407876"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 92000,
+      "follower_tier": "medium",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": true,
+      "score": 8,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/eva_collctn",
+      "offer_angle": "customisation order flow + storefront + WhatsApp orders + invoices",
+      "outreach_channel": "whatsapp",
+      "notes": "migrated from ig-2026-08-16.json; requalify on next visit"
+    },
+    "instagram|@ovio_clothing|wa.me/message/QKA3SAGN43ALP1": {
+      "lead_id": "instagram|@ovio_clothing|wa.me/message/QKA3SAGN43ALP1",
+      "platform": "instagram",
+      "handle": "@ovio_clothing",
+      "page_name": "Ovio Clothing",
+      "category": "ecommerce",
+      "icp": "icp3",
+      "location": null,
+      "contacts": {
+        "whatsapp": [
+          "wa.me/message/QKA3SAGN43ALP1"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 7233,
+      "follower_tier": "small",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": true,
+      "score": 7,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/ovio_clothing",
+      "offer_angle": "storefront + WhatsApp order flow + invoices + stock tracking",
+      "outreach_channel": "whatsapp",
+      "notes": "migrated from ig-2026-08-16.json; truncated mobile dropped (partial), wa.me click-to-chat kept"
+    },
+    "instagram|@noor.by.sana|+918080813611": {
+      "lead_id": "instagram|@noor.by.sana|+918080813611",
+      "platform": "instagram",
+      "handle": "@noor.by.sana",
+      "page_name": "Noor by Sana",
+      "category": "handmade",
+      "icp": "icp3",
+      "location": null,
+      "contacts": {
+        "whatsapp": [
+          "+918080813611"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 7518,
+      "follower_tier": "small",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": true,
+      "score": 7,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/noor.by.sana",
+      "offer_angle": "product catalog + storefront + WhatsApp orders + invoices",
+      "outreach_channel": "whatsapp",
+      "notes": "migrated from ig-2026-08-16.json"
+    },
+    "instagram|@_bhumika_creations|bhumikasahu1109@gmail.com": {
+      "lead_id": "instagram|@_bhumika_creations|bhumikasahu1109@gmail.com",
+      "platform": "instagram",
+      "handle": "@_bhumika_creations",
+      "page_name": "Bhumika Creations",
+      "category": "clothing",
+      "icp": "icp3",
+      "location": null,
+      "contacts": {
+        "email": [
+          "bhumikasahu1109@gmail.com"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": false,
+      "followers": 3605,
+      "follower_tier": "small",
+      "last_post": "unknown",
+      "posting_cadence": "unknown",
+      "engagement_tier": "none",
+      "reply_signal": false,
+      "score": 6,
+      "status": "new",
+      "first_seen": "2026-08-16T23:00:00+05:30",
+      "last_seen": "2026-08-16T23:00:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://instagram.com/_bhumika_creations",
+      "offer_angle": "custom-order intake + storefront + invoices",
+      "outreach_channel": "email",
+      "notes": "migrated from ig-2026-08-16.json; email-only (weakest contact)"
+    },
+    "instagram|priya.odisha|+917789898899": {
+      "lead_id": "instagram|priya.odisha|+917789898899",
+      "platform": "instagram",
+      "handle": "priya.odisha",
+      "page_name": "Priyadarshini Handloom",
+      "category": "handloom",
+      "icp": "icp3",
+      "location": "Bhubaneswar, Odisha",
+      "contacts": {
+        "whatsapp": [
+          "+917789898899"
+        ],
+        "phone": [],
+        "email": [
+          "hello@priyadarshinihandloom.com"
+        ]
+      },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": true,
+      "followers": 9345,
+      "follower_tier": "medium",
+      "last_post": "reel 2026-07-16 (~5w ago, borderline)",
+      "posting_cadence": "active reels + posts",
+      "engagement_tier": "medium",
+      "reply_signal": true,
+      "score": 8,
+      "status": "new",
+      "first_seen": "2026-08-19T18:30:00+05:30",
+      "last_seen": "2026-08-19T18:30:00+05:30",
+      "seen_count": 1,
+      "source_url": "https://www.instagram.com/priya.odisha/",
+      "offer_angle": "WhatsApp order flow + branded storefront + inventory + AI (replaces linktr.ee + manual DMs; website dead)",
+      "outreach_channel": "whatsapp",
+      "notes": "Est. 1990 Bhubaneswar handloom store, 9.3K followers, 534 posts, sells via IG + WhatsApp + email. Website dead (Cloudflare DNS). Prime ICP3 established brand, manual order handling."
+    }
+  },
+  "skipped": {
+    "padmatraders.berhampur": {
+      "reason": "inactive",
+      "detail": "textile wholesaler ICP1, WhatsApp +91 95833 77377 + email bprsubudhi@gmail.com, 5.8K flw, last verifiable post 8 Jul 2026 (~6w > 30d gate); strong requalify candidate",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "SaNS.Odisha": {
+      "reason": "inactive",
+      "detail": "food/beverage distributor ICP1, WhatsApp +91 83277 84904 + phone + email, 369 flw, last post Sep 2020",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "bhawanidistributorsodisha": {
+      "reason": "inactive",
+      "detail": "rice mill hardware distributor, phone +91 98616 69595, 11 flw, last post 28 Aug 2015",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "profile.php?id=61574158708113": {
+      "reason": "inactive",
+      "detail": "Odisha Wholesale Distributors (Nigam Supplier), wholesale/supply shop Hanspal Bhubaneswar, phone +91 94393 93585 + email, last post 12 Apr 2025",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "profile.php?id=100064306208987": {
+      "reason": "inactive",
+      "detail": "T-shirt Wholesale & manufacturing Odisha, WhatsApp +91 86101 93311 + email, 30 flw, last post Jul 2020",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "profile.php?id=100067702416317": {
+      "reason": "inactive",
+      "detail": "Bsk Food And Agro Products, FMCG distributor Odisha ICP1, phone +91 79780 66285 + email + site bskfoodandagro.com, 21 flw, last post Jan 2020",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "queenscollectionodisha": {
+      "reason": "inactive",
+      "detail": "Queens Collection bridal saree showroom Berhampur/Cuttack/BBSR, landline 0671 220 3605, 156 flw, last post Oct 2021",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "FashionEraBoutiqueBBSR": {
+      "reason": "inactive",
+      "detail": "Fashion Era Boutique, phone +91 99370 11882 + email + site fashionfeb.com, 170 flw, last post Feb 2020",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "biriyanisthan": {
+      "reason": "no-contact",
+      "detail": "cloud kitchen BBSR, 237 flw, Messenger only (no phone/WA/email), review 7y old",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "melanze007": {
+      "reason": "inactive",
+      "detail": "Melanze cloud kitchen BBSR ICP2, WhatsApp +91 74400 00183 + phone + email, 143 flw, last post Jun 2021",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "AnasBotique": {
+      "reason": "inactive",
+      "detail": "Ana's Boutique Chandrasekharpur, phone +91 90901 99207, 1.5K flw, last post Oct 2013",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "shopwithsweeties": {
+      "reason": "inactive",
+      "detail": "Sweetie P's boutique Kharavela Nagar, phone +91 88957 26695, 403 flw, last post Jul 2019",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "profile.php?id=100054230090931": {
+      "reason": "inactive",
+      "detail": "Faith Boutique Nayapalli, phone +91 83289 44601, 1K flw, last post Sep 2023",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "Odisha-Wholesale-Bazaar": {
+      "reason": "aggregator",
+      "detail": "community marketplace 'open virtual market place', not a single business",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    },
+    "All-Odisha-Wholesale-Bazaar": {
+      "reason": "aggregator",
+      "detail": "internet marketing/advertising service, not a seller",
+      "first_seen": "2026-08-19T17:50:00+05:30",
+      "last_seen": "2026-08-19T17:50:00+05:30",
+      "seen_count": 1
+    }
+  },
+  "blacklist": []
+}

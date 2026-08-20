@@ -1,0 +1,63 @@
+{
+  "agent": "ecomai-fb-lead-scraper",
+  "timestamp": "2026-08-19T18:30:00+05:30",
+  "platform": "facebook",
+  "icp_focus": ["icp3"],
+  "categories_scraped": ["cosmetic", "saree", "fashion", "handloom", "d2c"],
+  "slot": "evening",
+  "run_status": "completed",
+  "run_summary": {
+    "candidates_seen": 12,
+    "qualified_output": 1,
+    "new_leads": 1,
+    "updated_leads": 0,
+    "skipped_total": 11,
+    "skipped_by_reason": {
+      "inactive": 7,
+      "working-store": 2,
+      "aggregator": 1,
+      "no-contact": 1
+    }
+  },
+  "items": [
+    {
+      "lead_id": "instagram|priya.odisha|+917789898899",
+      "timestamp": "2026-08-19T18:30:00+05:30",
+      "platform": "instagram",
+      "source_url": "https://www.instagram.com/priya.odisha/",
+      "handle": "priya.odisha",
+      "page_name": "Priyadarshini Handloom",
+      "category": "handloom",
+      "icp": "icp3",
+      "location": "Bhubaneswar, Odisha",
+      "contacts": { "whatsapp": ["+917789898899"], "phone": [], "email": ["hello@priyadarshinihandloom.com"] },
+      "contact_validated": true,
+      "website_status": "none",
+      "website_checked": true,
+      "followers": 9345,
+      "follower_tier": "medium",
+      "last_post": "reel 2026-07-16 (~5w ago, borderline)",
+      "posting_cadence": "active reels + posts",
+      "engagement_tier": "medium",
+      "reply_signal": true,
+      "score": 8,
+      "urgency": "medium",
+      "offer_angle": "WhatsApp order flow + branded storefront + inventory + AI (replaces linktr.ee + manual DMs; website dead)",
+      "outreach_channel": "whatsapp",
+      "notes": "Est. 1990 Bhubaneswar handloom store, 9.3K followers, 534 posts, sells via IG + WhatsApp + email. Website priyadarshinihandloom.com dead (Cloudflare DNS error = no working store). Contacts from linktr.ee/priyaodisha. Prime ICP3: established brand, manual order handling, no storefront."
+    }
+  ],
+  "skipped": [
+    { "handle": "socialseller_handloom_saree", "reason": "inactive", "detail": "designer saree wholesale Odisha, WA +91 63709 03490, 52 flw, 57 posts, last post Jun 2023; requalify" },
+    { "handle": "atamagujaratisaree", "reason": "inactive", "detail": "Shreemataji Sarees Bhubaneswar, phone +91 78469 03737 + email saktijan6@gmail.com, 3 flw, 33 posts; brand-new/tiny, activity unconfirmed; requalify" },
+    { "handle": "nidharshanasareesofficial", "reason": "working-store", "detail": "Nidharshana Sarees Bangalore, active (posted 8h ago) but orders ONLY via official website nidharshanasarees.com = functioning ecom store; skip per rule" },
+    { "handle": "albeli", "reason": "working-store", "detail": "Varanasi wholesale saree manufacturer, functioning site + WhatsApp, B2B reseller platform" },
+    { "handle": "dhagabyshubh", "reason": "non-india", "detail": "handloom sarees, WhatsApp wa.me/14256865800 = US number, premium brand with working store" },
+    { "handle": "trendinneed", "reason": "working-store", "detail": "Mumbai wholesale saree, functioning online store + WhatsApp" },
+    { "handle": "textilezone.in", "reason": "working-store", "detail": "Surat wholesale textile supplier, functioning online catalog" },
+    { "handle": "govindya-handlooms", "reason": "inactive", "detail": "Sambalpuri handloom, WhatsApp 9629934454, seen in FB group post Apr 2024; contact unverified, post stale" },
+    { "handle": "whatsapp-saree-resellers-group", "reason": "aggregator", "detail": "FB group channel, not single business" },
+    { "handle": "odishafood", "reason": "influencer", "detail": "food/recipe content pages, not sellers" },
+    { "handle": "biriyanisthan", "reason": "no-contact", "detail": "cloud kitchen BBSR, Messenger only" }
+  ]
+}

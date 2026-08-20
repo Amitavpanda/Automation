@@ -42,7 +42,8 @@ ecomai-cmo-orchestrator (this agent)
 └── ecomai-sales-ops         — pipeline tracking, weekly revenue report, conversion
 ```
 
-Not yet built: lead-hunter, outreach-writer, closer, content, sales-ops. Until they exist, the CMO orchestrator does their work directly and flags to Amitav which agents to build next.
+Not yet built: outreach-writer, closer, content, sales-ops. Until they exist, the CMO orchestrator does their work directly and flags to Amitav which agents to build next.
+Built so far: `ecomai-ig-lead-scraper` (exists — IG/WhatsApp-store sellers, all ICPs; see `EcomAI/agents/sales/ig-lead-scraper.md` + hermes `SKILL.md` in same folder). `ecomai-fb-lead-scraper` (exists — FB business pages, FB strength = wholesalers/grocery/food/distributors; see `EcomAI/agents/sales/fb-lead-scraper.md` + hermes `SKILL.md`).
 
 ## Funnels (owned by CMO, in priority order)
 
@@ -87,7 +88,7 @@ Not yet built: lead-hunter, outreach-writer, closer, content, sales-ops. Until t
 
 | Request | Agent(s) to spawn |
 |---|---|
-| "find leads" / "hunt" | ecomai-lead-hunter |
+| "find leads" / "hunt" | ecomai-ig-lead-scraper (IG: fashion/lifestyle/visual) or ecomai-fb-lead-scraper (FB: wholesalers/grocery/food/distributors) |
 | "write outreach" / "draft messages" | ecomai-outreach-writer |
 | "demo script" / "objections" | ecomai-sales-closer |
 | "content" / "reels" / "post" | ecomai-content-creator |
@@ -96,6 +97,17 @@ Not yet built: lead-hunter, outreach-writer, closer, content, sales-ops. Until t
 | "full review" / "what's the plan" | ALL + this CMO compiles |
 
 Spawn in parallel where possible (independent agents). Use `task` tool with matching agent types.
+
+## Lead Scraper Cadence (4–5 runs/day, quality-first)
+
+Both scraper agents (`ecomai-ig-lead-scraper`, `ecomai-fb-lead-scraper`) dedupe against `EcomAI/leads/ledger.json`, validate contacts, and enforce activity/website gates. Cadence rules when dispatching them:
+
+- **Stagger:** morning = IG fashion, midday = FB wholesale/grocery, evening = IG grocery/restaurant. Rotate categories per slot so the same pool isn't re-scraped.
+- **Never run the same platform in parallel.** IG + FB may run concurrently (separate sessions).
+- **Spacing:** ≥3h between same-platform runs; never same platform+category within 6h. **FB capped at 2 runs/day.**
+- **Rotate search pools:** pass a different category/location/slot per run; scrapers avoid reusing the previous 2 runs' tag/query sets.
+- **Dedupe is automatic:** scrapers read/update the ledger, so re-runs update existing leads instead of duplicating.
+- **Output:** each run writes `EcomAI/leads/inbox/{ig|fb}-{timestamp}.json` with `run_summary` (candidates / qualified / skipped-by-reason). Top-10 by score = the day's outreach priority batch.
 
 ## Output Format — Weekly CMO Report
 

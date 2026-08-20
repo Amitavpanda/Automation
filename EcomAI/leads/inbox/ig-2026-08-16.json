@@ -1,0 +1,99 @@
+{
+  "agent": "ecomai-ig-lead-scraper",
+  "timestamp": "2026-08-16T23:00:00+05:30",
+  "platform": "instagram",
+  "run_note": "Live scrape via browser-use session ecomai-ig. Contact gate applied: only leads with WhatsApp/mobile/email visible kept.",
+  "items": [
+    {
+      "source_url": "https://instagram.com/cotton.handicrafts",
+      "handle": "@cotton.handicrafts",
+      "business_name": "Cotton Handicrafts",
+      "category": "clothing",
+      "followers": null,
+      "signal": "Handblock sarees/suits/fabrics, WHOLESALE ONLY, since 1995, WhatsApp number in bio",
+      "contact": "whatsapp:8079043335",
+      "score": 9,
+      "urgency": "high",
+      "offer_angle": "wholesale catalog + storefront + WhatsApp order flow + invoices + AI",
+      "outreach_channel": "whatsapp",
+      "icp": "icp4"
+    },
+    {
+      "source_url": "https://instagram.com/mandmdesigns._",
+      "handle": "@mandmdesigns._",
+      "business_name": "M&M Designs",
+      "category": "clothing",
+      "followers": null,
+      "signal": "WHOLESALERS only, self-manufactured, 10 years in industry, 2 mobile numbers in bio",
+      "contact": "mobile:7984590068 | mobile:8849279544",
+      "score": 8,
+      "urgency": "medium",
+      "offer_angle": "product catalog + storefront + order tracking + invoices + AI",
+      "outreach_channel": "whatsapp",
+      "icp": "icp4"
+    },
+    {
+      "source_url": "https://instagram.com/eva_collctn",
+      "handle": "@eva_collctn",
+      "business_name": "Eva Collections",
+      "category": "clothing",
+      "followers": 92000,
+      "signal": "Designing wear, online customisation, phone in bio, wa.me link in link-in-bio",
+      "contact": "whatsapp:+917025407876 | mobile:7025407876",
+      "score": 8,
+      "urgency": "high",
+      "offer_angle": "customisation order flow + storefront + WhatsApp orders + invoices",
+      "outreach_channel": "whatsapp",
+      "icp": "icp3"
+    },
+    {
+      "source_url": "https://instagram.com/ovio_clothing",
+      "handle": "@ovio_clothing",
+      "business_name": "Ovio Clothing",
+      "category": "ecommerce",
+      "followers": 7233,
+      "signal": "Shopping & retail, imports (TR/CN), ships all India, 'contact us' phone in bio, wa.me link",
+      "contact": "whatsapp:wa.me/message/QKA3SAGN43ALP1 | mobile:889... (truncated in bio)",
+      "score": 7,
+      "urgency": "medium",
+      "offer_angle": "storefront + WhatsApp order flow + invoices + stock tracking",
+      "outreach_channel": "whatsapp",
+      "icp": "icp3"
+    },
+    {
+      "source_url": "https://instagram.com/noor.by.sana",
+      "handle": "@noor.by.sana",
+      "business_name": "Noor by Sana",
+      "category": "handmade",
+      "followers": 7518,
+      "signal": "Embroidery, bracelets, pipe cleaner gifts, wa.me link in link-in-bio",
+      "contact": "whatsapp:+918080813611",
+      "score": 7,
+      "urgency": "medium",
+      "offer_angle": "product catalog + storefront + WhatsApp orders + invoices",
+      "outreach_channel": "whatsapp",
+      "icp": "icp3"
+    },
+    {
+      "source_url": "https://instagram.com/_bhumika_creations",
+      "handle": "@_bhumika_creations",
+      "business_name": "Bhumika Creations",
+      "category": "clothing",
+      "followers": 3605,
+      "signal": "Sewing/stiching, custom outfits, email in bio for collaboration/orders",
+      "contact": "email:bhumikasahu1109@gmail.com",
+      "score": 6,
+      "urgency": "low",
+      "offer_angle": "custom-order intake + storefront + invoices",
+      "outreach_channel": "email",
+      "icp": "icp3"
+    }
+  ],
+  "skipped": [
+    "@babitagrawaljewellery", "@inclinedstudio", "@transstudiomallcibubur", "@thakurcreationstc",
+    "@shayagrams", "@ishwetagulati", "@shirin_tuli_sharma", "@siya08_", "@albarodafashiontoptan",
+    "@jjshoppingdiaries2023", "@the_wardrobeeditt", "@trendfits.in", "@morshu_fashion",
+    "@thauya_", "@jrnclothing_", "@vinayak_fashion_813", "@leemasempire", "@socialcanvass.in",
+    "@josceline_668", "@mallikasinghania", "@hamba.es", "@quintessentiana"
+  ]
+}

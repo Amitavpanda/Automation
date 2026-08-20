@@ -1,0 +1,5 @@
+# Large media files (exceed GitHub 100MB limit)
+getcodefree/downloads/*.mp4
+getcodefree/downloads/*.mov
+getcodefree/downloads/*.avi
+getcodefree/downloads/*.mkv
