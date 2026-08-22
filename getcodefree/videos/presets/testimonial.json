@@ -1,0 +1,20 @@
+{
+  "name": "testimonial",
+  "description": "30-45s testimonial: lower-third name/title, subtle transitions, trust-building",
+  "canvas": { "aspect_ratio": "9:16" },
+  "tracks": {
+    "video": [
+      { "type": "clip", "duration_range": "8-12s", "transition": "crossfade", "transition_duration": 0.5 }
+    ],
+    "text": [
+      { "role": "lower-third", "start": 1, "end": 4, "style": "two-line", "name_color": "#19d3c5", "title_color": "#ffffff", "font_size": 22, "position": "bottom-left" },
+      { "role": "quote", "style": "italic", "color": "#ffffff", "font_size": 24, "position": "center" },
+      { "role": "caption", "style": "sentence", "color": "#ffffff", "font_size": 20, "position": "bottom-center" },
+      { "role": "cta", "start": -5, "end": 0, "text": "Work with us → @AmitavPanda99", "style": "regular", "color": "#ffffff", "bg": "#19d3c5", "position": "center", "font_size": 24 }
+    ],
+    "audio": [
+      { "role": "music", "volume": 0.2, "duck_under_voice": true, "mood": "calm" }
+    ]
+  },
+  "lint_rules": { "max_cps": 18, "safe_area": true, "speed_consistency": true }
+}

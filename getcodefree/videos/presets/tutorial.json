@@ -1,0 +1,21 @@
+{
+  "name": "tutorial",
+  "description": "60-90s tutorial: step overlays, screen recording friendly, clear pacing",
+  "canvas": { "aspect_ratio": "16:9" },
+  "tracks": {
+    "video": [
+      { "type": "clip", "duration_range": "5-15s", "transition": "fade", "transition_duration": 0.3 }
+    ],
+    "text": [
+      { "role": "title", "start": 0, "end": 5, "style": "bold", "color": "#ffffff", "bg": "#0f172a", "position": "top-center", "font_size": 36 },
+      { "role": "step", "style": "numbered", "color": "#19d3c5", "font_size": 28, "position": "top-left" },
+      { "role": "caption", "style": "sentence", "color": "#ffffff", "font_size": 22, "position": "bottom-center" },
+      { "role": "cta", "start": -8, "end": 0, "text": "Follow @AmitavPanda99 for more", "style": "regular", "color": "#ffffff", "bg": "#6f8cff", "position": "bottom-center", "font_size": 24 }
+    ],
+    "audio": [
+      { "role": "music", "volume": 0.15, "duck_under_voice": true },
+      { "role": "sfx", "on_step": "pop", "volume": 0.3 }
+    ]
+  },
+  "lint_rules": { "max_cps": 15, "safe_area": true, "speed_consistency": true }
+}

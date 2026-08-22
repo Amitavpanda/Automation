@@ -1,0 +1,20 @@
+{
+  "name": "viral-short",
+  "description": "15-30s viral short: hook → value → CTA, fast cuts, captions, beat-sync",
+  "canvas": { "aspect_ratio": "9:16" },
+  "tracks": {
+    "video": [
+      { "type": "clip", "duration_range": "2-4s", "transition": "cut", "transition_duration": 0.15 }
+    ],
+    "text": [
+      { "role": "hook", "start": 0, "end": 3, "style": "bold", "color": "#ffffff", "bg": "#0f172a", "position": "top-center", "font_size": 32 },
+      { "role": "caption", "style": "karaoke", "color": "#19d3c5", "font_size": 24, "position": "bottom-center" },
+      { "role": "cta", "start": -5, "end": 0, "text": "Follow @AmitavPanda99", "style": "bold", "color": "#ffffff", "bg": "#6f8cff", "position": "center", "font_size": 28 }
+    ],
+    "audio": [
+      { "role": "music", "volume": 0.25, "duck_under_voice": true },
+      { "role": "sfx", "on_transition": "whoosh", "volume": 0.4 }
+    ]
+  },
+  "lint_rules": { "max_cps": 20, "safe_area": true, "speed_consistency": true }
+}

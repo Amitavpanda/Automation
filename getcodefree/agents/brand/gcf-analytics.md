@@ -29,10 +29,13 @@ Orchestrator schedules you via opencode scheduler. Default: weekly full report +
 - Views, likes, replies, reposts, bookmarks
 - **AI-label status per post: flagged "Made with AI" vs not** — compare views flagged vs unflagged (expect ~5x suppression on flagged). Flagged = recommend real screenshots over AI images.
 - **Posting cadence gaps** — log post date per platform; flag any 5+ day gap and any same-day multi-post dump (both kill reach).
-- Engagement velocity (first 30 min) — top 2026 algorithm signal
-- Reply depth (threaded conversations)
+- Engagement velocity (first 30 min) — top 2026 algorithm signal; ~70% of reach decided in first 30-60 min, ~80% of lifetime impressions in first 2h
+- **30-min reply count** — strongest single growth metric (10+ replies in 15 min / 20+ in 30 min = viral threshold → snowballs to non-followers)
+- Reply depth (threaded conversations, 3+ participant chains)
+- Dwell-time proxy: bookmark rate + profile clicks (~12x a like signal)
 - Follower count growth
 - DM leads captured (lead magnet keyword replies)
+- **Engagement debt watch**: if the first ~100 posts average <0.5% engagement, the account risks permanent negative weighting + cold-start suppression (~10% distribution). Flag early if trending under.
 
 ### LinkedIn
 - Impressions, reactions, comments, shares
@@ -72,6 +75,34 @@ Cross-reference engagement + lead logs when available:
 - Read `getcodefree/leads/<date>.md` — DM leads captured, classified hot/warm/cold, conversion to meeting.
 - Report correlation: which content/lead magnet produced DMs → qualified conversations.
 
+## Daily Metrics File (MANDATORY — feeds the Yesterday → Today loop)
+
+Every check writes `getcodefree/brand/analytics/daily-<YYYY-MM-DD>.json` with per-post metrics. gcf-brand-orchestrator + gcf-strategist read the newest file FIRST each run and classify yesterday's post WIN/FLAT/DEAD to decide today's post. Never skip the write — without it the loop has no memory.
+
+```json
+{
+  "agent": "gcf-analytics",
+  "date": "YYYY-MM-DD",
+  "followers": 249,
+  "posts": [
+    {
+      "url": "post URL (match posts-log.json)",
+      "views": 788,
+      "likes": 28,
+      "replies": 2,
+      "reposts": 1,
+      "bookmarks": 3,
+      "ai_label": false,
+      "verdict": "WIN | FLAT | DEAD",
+      "why": "one-line: what signal decided the verdict"
+    }
+  ],
+  "single_learning": "one actionable line for tomorrow's post"
+}
+```
+
+Verdict thresholds (same as orchestrator/strategist): WIN = views ≥100 OR ≥1 reply OR ≥1 bookmark. FLAT = views 16-99, no replies/bookmarks. DEAD = views <16 OR ai_label=true. Cross-reference each post against `posts-log.json` by URL so the loop stays clean.
+
 ## Analysis Rules
 
 - Compare same format type (post vs post, reel vs reel) — don't compare thread to reel.
@@ -80,6 +111,7 @@ Cross-reference engagement + lead logs when available:
 - **2026 algorithm priorities**: bookmark rate, reply depth, dwell time, engagement velocity. Weigh these higher than likes.
 - Track cadence correlation: posts after 5+ day gaps vs after 1-day gaps; same-day dumps vs spaced posts.
 - Track AI-label correlation: views per AI-flagged vs unflagged post; feed back to visual-creator (real screenshots for X).
+- Track own peak window from real data (posting at own audience peak = 2-3x reach) — verify the 20:00-23:00 IST assumption, flag better windows.
 
 ## Learnings → Feed Strategist
 
@@ -89,6 +121,7 @@ Output actionable feed-forward for gcf-strategist:
 - Best posting times
 - What to double down on / stop
 - Lead magnet performance (which CTA keyword converts)
+- **Yesterday's verdict (WIN/FLAT/DEAD) per post — write to `brand/analytics/daily-<date>.json` every run**
 
 ## Output (structured)
 

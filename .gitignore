@@ -3,3 +3,19 @@ getcodefree/downloads/*.mp4
 getcodefree/downloads/*.mov
 getcodefree/downloads/*.avi
 getcodefree/downloads/*.mkv
+
+# Node modules
+**/node_modules/
+
+# Build artifacts
+*.log
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store

@@ -1,0 +1,30 @@
+{
+  "agent": "gcf-analytics",
+  "date": "2026-08-19",
+  "followers": 249,
+  "posts": [
+    {
+      "url": "https://x.com/AmitavPanda99/status/pinned-distribution-moat",
+      "views": null,
+      "likes": 28,
+      "replies": 0,
+      "reposts": 0,
+      "bookmarks": null,
+      "ai_label": false,
+      "verdict": "needs_metrics",
+      "why": "views not scraped yet — first analytics run fills them, then loop computes verdict"
+    },
+    {
+      "url": "https://x.com/AmitavPanda99/status/voice-10-percent-typing",
+      "views": null,
+      "likes": 37,
+      "replies": 0,
+      "reposts": 0,
+      "bookmarks": null,
+      "ai_label": true,
+      "verdict": "needs_metrics",
+      "why": "ai_label=true → likely DEAD once views scraped (known 5x suppression); candidate for real-screenshot retry"
+    }
+  ],
+  "single_learning": "AI-flagged post and zero-reply posts dominate recent output — first run should verify views, then strategy is: personality layer + reply-driving hooks, not more authority posts."
+}

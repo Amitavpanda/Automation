@@ -1,0 +1,55 @@
+{
+  "note": "Every published post gets appended here (brand-orchestrator step 8). Tomorrow's run reads this + analytics/daily-<date>.json to decide today's post. Metrics = actual scraped numbers; fill as analytics reports them.",
+  "posts": [
+    {
+      "date": "2026-08-19",
+      "platform": "x",
+      "url": "https://x.com/AmitavPanda99/status/pinned-distribution-moat",
+      "tier": "large",
+      "format": "standard",
+      "topic": "Distribution is the moat (features are cheap, distribution is hard)",
+      "metrics": {"views": null, "likes": 28, "replies": 0, "reposts": 0, "bookmarks": null},
+      "ai_label": false
+    },
+    {
+      "date": "2026-08-18",
+      "platform": "x",
+      "url": "https://x.com/AmitavPanda99/status/voice-10-percent-typing",
+      "tier": "small",
+      "format": "standard",
+      "topic": "Voice-first dev workflow (I type 10% of the day now)",
+      "metrics": {"views": null, "likes": 37, "replies": 0, "reposts": 0, "bookmarks": null},
+      "ai_label": true
+    },
+    {
+      "date": "2026-08-17",
+      "platform": "x",
+      "url": "https://x.com/AmitavPanda99/status/andrew-ng-4-ai-skills",
+      "tier": "large",
+      "format": "reply",
+      "topic": "Andrew Ng AI Engineering Skills Map — traditional devs vs prompt-first",
+      "metrics": {"views": null, "likes": 138, "replies": 0, "reposts": 0, "bookmarks": null},
+      "ai_label": false
+    },
+    {
+      "date": "2026-08-17",
+      "platform": "x",
+      "url": "https://x.com/AmitavPanda99/status/30-years-ai-engineering-one-hour",
+      "tier": "small",
+      "format": "standard",
+      "topic": "30 years of AI engineering in one hour (LLM → prompts → agent team → graphs)",
+      "metrics": {"views": null, "likes": 25, "replies": 0, "reposts": 0, "bookmarks": null},
+      "ai_label": false
+    },
+    {
+      "date": "2026-08-16",
+      "platform": "x",
+      "url": "https://x.com/AmitavPanda99/status/ecomai-wholesalers-still-on-whatsapp",
+      "tier": "large",
+      "format": "standard",
+      "topic": "EcomAI story — Indian wholesalers still on WhatsApp/paper ledgers",
+      "metrics": {"views": null, "likes": 52, "replies": 0, "reposts": 0, "bookmarks": null},
+      "ai_label": false
+    }
+  ]
+}

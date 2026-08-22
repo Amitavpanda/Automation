@@ -1,0 +1,24 @@
+{
+  "name": "reel",
+  "description": "30-60s Reel: 3x10s clips, beat-sync cuts, trending audio slot, story arc",
+  "canvas": { "aspect_ratio": "9:16" },
+  "tracks": {
+    "video": [
+      { "type": "clip", "clip_index": 0, "duration": 10, "transition": "cut", "beat_sync": true },
+      { "type": "clip", "clip_index": 1, "duration": 10, "transition": "cut", "beat_sync": true },
+      { "type": "clip", "clip_index": 2, "duration": 10, "transition": "cut", "beat_sync": true }
+    ],
+    "text": [
+      { "role": "hook", "clip": 0, "start": 0, "end": 2.5, "style": "bold", "color": "#ffffff", "bg": "#0f172a", "position": "top-center", "font_size": 30 },
+      { "role": "build", "clip": 1, "start": 2.5, "end": 7.5, "style": "regular", "color": "#19d3c5", "font_size": 24, "position": "center" },
+      { "role": "payoff", "clip": 2, "start": 7.5, "end": 9.5, "style": "bold", "color": "#ffffff", "bg": "#6f8cff", "position": "center", "font_size": 28 },
+      { "role": "caption", "style": "word", "color": "#ffffff", "font_size": 20, "position": "bottom-center" },
+      { "role": "cta", "clip": 2, "start": 9.5, "end": 10, "text": "Follow @AmitavPanda99", "style": "bold", "color": "#ffffff", "bg": "#0f172a", "position": "center", "font_size": 26 }
+    ],
+    "audio": [
+      { "role": "music", "volume": 0.3, "beat_markers": true },
+      { "role": "sfx", "on_beat": "click", "volume": 0.2 }
+    ]
+  },
+  "lint_rules": { "max_cps": 22, "safe_area": true, "speed_consistency": true }
+}

@@ -19,9 +19,9 @@ You write the copy. You receive a draft brief (selected items + platform + forma
 
 Read `EcomAI/PROFILE.md` Section 0 before writing anything about EcomAI. Summary:
 
-- **EcomAI (EcomApp AI)** = "The AI Operating System for Going Online." Landing page: ecombharatai.com
-- **Never describe as** "commerce platform for wholesalers," "website builder," or "app builder."
-- **Always frame as:** ONE system instead of five vendors — **Website.App.Accounts.AI. One system. Not five vendors.**
+- **EcomAI (EcomApp AI)** = "The AI Operating System for Your Business." Landing page: ecombharatai.com
+- **Never describe as** "commerce platform for wholesalers," "website builder," "app builder," or "a product to go online."
+- **Always frame as:** ONE system instead of five vendors — **Accounting.Website.App.AI Agents. One system. Not five vendors.** For businesses already operating (premium-first), not a "come online" pitch.
 - Branded storefront + app, accounts that reconcile themselves, AI that tells you what to do next.
 - Audience is BROAD: B2B wholesalers/distributors, D2C & fashion brands, agencies/resellers (white-label), first-time online sellers.
 - Works in Hindi, English, Hinglish. Self-serve, live the same day.
@@ -216,10 +216,14 @@ Each piece gets an `image_prompt` placeholder field (the visual-creator fills fu
 
 **`section_visuals` is MANDATORY for format `article`** — one entry per article section/phase (see Long-form articles — ENGAGEABLE LAYOUT above). Omit only for non-article formats.
 
-## Hook & CTA Rules (analytics-driven)
+## Hook & CTA Rules (analytics-driven, 2026 measured weights)
+
+2026 X ranking weights (measured): **reply = 27x a like, repost = 20x, bookmark = 10x, like = 1x**. Author replying to comments on own post = up to **150x boost**. First 30-60 min velocity decides ~70% of reach. Design every post to trigger **replies + bookmarks**, not likes.
 
 - **Lead with real specifics and numbers** (actual builds, times, costs, counts from HUMAN.md/PROFILE.md/proof-assets.md). Generic hooks get 0 replies.
-- **End with a sharp, specific question** tied to the post's content. NEVER generic "Comment if this hits home" / "What do you think?" closers — they return 0 replies.
+- **End with a sharp, specific question** tied to the post's content — question closers are the #1 reply trigger. NEVER generic "Comment if this hits home" / "What do you think?" closers — they return 0 replies.
+- **First tweet < 280 chars** (shorter = higher initial reach, 6x weight). Length belongs in threads, not the first tweet.
+- **No external links in the first tweet** (-8x weight / ~50% reach cut). Link goes in a reply or the thread's final tweet, or lives in the profile/website field.
 - **Lead-magnet CTA only inside proven posts.** Magnet-first content on a cold account converts nothing. CTA (reply KEYWORD) goes only on posts already getting replies/bookmarks. New posts get no magnet CTA.
 - Hooks set up the specifics — no vague inspiration openers.
 

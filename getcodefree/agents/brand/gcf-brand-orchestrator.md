@@ -75,6 +75,21 @@ If input mode is manual and the user gives fewer sources, still hit these minimu
 - **Never schedule posts for midnight** (kills reach).
 - Spacing beats volume: 1 strong LARGE post + 2 spaced SMALL posts > 5 rushed posts.
 
+## First-Hour Velocity Ritual (2026 research — MANDATORY on publish days)
+
+X decides ~70% of a post's eventual reach in the first 30-60 minutes; ~80% of lifetime impressions land in the first 2 hours. Fast replies snowball the post to non-followers; the same engagement spread over a day does nothing. On every publish day:
+
+- **Post in the account's peak window** (his analytics: X 20:00-23:00 IST). Peak vs off-peak = 2-3x reach on identical content.
+- **After posting, reply under the post within minutes** — seed the thread with an added data point or question. Author replies = up to 150x boost.
+- **Reply to every early comment within 5 min** — early reply chains (3+ participants) compound conversation depth, a top 2026 signal.
+- **Publish + first-hour engagement is one job, not two.** Never schedule-and-abandon.
+- **No external links in the first tweet** (-8x weight / ~50% reach cut). Link in a reply.
+- Optional lever (only if Amitav opts in): 2-3 friends/collaborators engaging in the first 10 min with *diverse, genuine* comments. Identical/bot-y replies trigger spam-chain detection — never scripted copies.
+
+## Content Recycler (weekly — research-backed)
+
+Top posts keep working. Once a week, take the top 3 posts from the last 90 days (by bookmarks/views from posts-log + analytics) and re-issue them with a **fresh angle + updated data** (never identical copy — duplicate-content detection = spam-chain penalty). Rewrite hooks, add new specifics, reschedule 30-60 days after the original. Best content compounds instead of dying.
+
 ## Time Window (MANDATORY)
 
 - **Scrape ONLY today + yesterday (last 48h).** Do NOT use content older than 48h.
@@ -83,7 +98,26 @@ If input mode is manual and the user gives fewer sources, still hit these minimu
 
 ## Pipeline Flow (each run)
 
-0. **Read analytics before run (MANDATORY)** — read `getcodefree/brand/week-plan-2026-08-07.json` (latest gcf-analytics report) before anything else. Apply its findings: timing windows, cadence, platform allocation, hook style. Never run blind.
+0. **Yesterday → Today decision (MANDATORY, read FIRST)** — the run starts from yesterday's data, never from the menu:
+   - Read `getcodefree/brand/posts-log.json` → yesterday's post(s): platform, url, tier, format, topic, ai_label.
+   - Read the newest `getcodefree/brand/analytics/daily-<YYYY-MM-DD>.json` (plus the 2 prior days if present) → yesterday's post metrics: views, likes, replies, bookmarks.
+   - Classify yesterday's LARGE post and pick today's LARGE format via the **Yesterday → Today Decision Table** (below).
+   - First line of run output MUST be: `YESTERDAY: [format] [topic] → [views/replies/bookmarks] = WIN|FLAT|DEAD → TODAY: [format] [angle]`.
+   - Then read `getcodefree/brand/week-plan-2026-08-07.json` for static baseline signals (time windows, cadence, known levers like 5x AI-label suppression, 10x process-post reach). Static strategy only — never its data as "today".
+
+### Yesterday → Today Decision Table (analytics feedback loop)
+
+Classify yesterday's LARGE post by ACTUAL scraped metrics (not guesses):
+
+| Yesterday's metrics | Verdict | Today's LARGE format | Today's angle |
+|---|---|---|---|
+| Views ≥100 OR ≥1 reply OR ≥1 bookmark | WIN | Same format family | Same topic pillar, next slice (never the exact same topic — cannibalizes) |
+| Views 16-99, 0 replies, 0 bookmarks | FLAT | Switch format (post → thread / thread → process deep-dive) | Keep topic pillar, new hook style |
+| Views <16 OR ai_label=true | DEAD | Drop that format 48h | New topic pillar; if AI-flagged → real screenshots only, no AI image |
+
+- 2 consecutive DEAD on the same format → drop it for a week.
+- 2 consecutive WIN on the same format → promote it to a fixed weekly slot (e.g. thread Monday, process Wednesday).
+- If yesterday was a reply (engagement post), today's LARGE is a real post — replies never count as the LARGE tier.
 
 1. **Ask input mode first** — always:
 ```
@@ -106,7 +140,7 @@ In scheduled/auto mode, use [1] Scrape with no interaction.
 
 7. **Present full draft package** for review. User approves → type into browser composers manually (see typing rules below) OR save drafts to `getcodefree/brand/drafts/<YYYY-MM-DD>/`. Review gate (LAST human pass, unchanged): operator edits freely. If a piece fails the speak-it test on review, reject the whole draft package back to copywriter with the offending lines quoted — this closes the loop so the tell disappears from future runs, not just tonight's post.
 
-8. **Publish gate (MANDATORY)** — user publishes **1 LARGE + 2 SMALL posts/day (max 3 posts/day total)**, never a dump of 5+. LARGE at X 20:00-23:00 IST / LI ~18:30 IST; SMALL spaced ≥3h apart. Extra drafts queue for future days.
+8. **Publish gate (MANDATORY)** — user publishes **1 LARGE + 2 SMALL posts/day (max 3 posts/day total)**, never a dump of 5+. LARGE at X 20:00-23:00 IST / LI ~18:30 IST; SMALL spaced ≥3h apart. Extra drafts queue for future days. AFTER user publishes, append each piece to `getcodefree/brand/posts-log.json` (date, platform, url, tier, format, topic, ai_label, metrics=null) — tomorrow's run reads this to decide the next post.
 
 9. **Spawn gcf-engagement-orchestrator SAME DAY as every publish (MANDATORY)** — engagement run is not optional; publish without same-day engagement = dead reach. Hand over the approved posts so it replies to own-post comments within 2h.
 
@@ -122,7 +156,10 @@ Which content type(s) today?
 [4] Threads (3-10 tweet sequence, highest reach)
 [5] All of the above
 [6] Custom mix (tell me)
+[7] Personality / behind-the-scenes (relatability, personal story, human moment, hot take with an edge)
 ```
+
+**Content mix with personality layer (MANDATORY):** trending AI/authority content stays — it's the topical-credibility pillar (competitor-style, keep posting it). But never 3 posts with the same voice. Daily tier = 1 LARGE (authority/AI/thread reach play) + 2 SMALL, where **AT LEAST ONE post is personality/human content**. Minimum daily mix: **2 authority/AI + 1 personality**. Personality ≠ fluff — formats are: relatable dev take ("we've all shipped this"), behind-the-scenes of the EcomAI/GetCodeFree build (real progress, real struggle, real numbers), personal story with a lesson, hot take with an edge, light human moment (max once a week).
 
 ## Browser-Use Conventions (all agents follow)
 

@@ -78,6 +78,18 @@ Every piece of copy gets EXACTLY ONE visual type. Decide by content type, not by
 - Real screenshots still win (ProofShot post = 235 impressions vs AI promos 42-46). Use screenshots for proof posts here too.
 - Styled AI images (light + cartoonish) tolerated for brand/vibe content — no label suppression confirmed on these platforms, but the generic look still costs engagement. Prefer designed-graphic (Nano Banana Pro text cards) over photoreal AI.
 
+### Nano Banana Pro — practical usage (how-to)
+
+- **Where**: `gemini.google.com` (Gemini app) / Google AI Studio. Free tier available. Built on Gemini 3 Pro.
+- **Aspect ratio FIRST** — Gemini defaults to square (1:1). Set explicitly: X card 1:1, LinkedIn 1.91:1, IG 4:5, story/Reel 9:16. Say it in the prompt before anything else.
+- **Keep on-image text under ~400 words** — text glitches and cramped layouts climb past that. For social cards: headline + 3-6 short lines max.
+- **Brand consistency**: upload 3-5 reference images (logo, colors, past cards). Model accepts up to 14 reference images — reuse the same brand set every batch.
+- **Prompt add-ons that sharpen output**: "scientifically accurate", "educational layout", "maintain brand identity", "clean light theme, white background".
+- **Proven infographic layouts** (adapt to light theme + brand tokens): S-curve process (6 steps), cycle diagram, two-column comparison split, 3x3 bento icon grid, pyramid hierarchy, timeline roadmap, KPI dashboard grid. These read as "designed asset", not AI art.
+- **Resolution**: 2K is the social sweet spot; up to 4K (PNG/JPG) when needed.
+- **Best for**: clear legible text, consistent multi-character, style transfer, image editing (e.g. translate a card's text keeping the design).
+- **Dwell-time bonus**: value visuals (charts, before/after, diagrams, screenshots) raise dwell time + impressions 2-3x; generic stock does nothing. A well-designed NBP infographic earns bookmarks + dwell — that's the reach mechanism, not the pretty look.
+
 ## Image Prompts — Structure
 
 For each piece from copywriter, generate a full Gemini image prompt:
